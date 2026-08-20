@@ -1,0 +1,76 @@
+@import url("./fonts.css");
+
+:root {
+  --font-titles: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --fs-body: 16px;
+  --fs-h1: 42px;
+  --fs-h2: 32px;
+  --fs-h3: 24px;
+  --fs-h4: 20px;
+  --fs-h6: 14px;
+
+  --color-text: #222222;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titles);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: var(--fs-body);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--fs-h6);
+  font-weight: 300;
+}
