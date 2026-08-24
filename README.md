@@ -1,4 +1,12 @@
-# projeto-vitor
+<!-- markdownlint-disable MD033 -->
+# Paradôlia
+
+<picture>![logo-marca](./assets/icons/logo-marca.svg)</picture>
+> Algo que parece; É; Mas, não é;
+
+<picture>![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-yellow)</picture>
+<picture>![Status](https://img.shields.io/badge/HTML-5-red?logo=html5)</picture>
+<picture>![Status](https://img.shields.io/badge/CSS-purple?logo=css)</picture>
 
 ## Licença do Projeto
 
