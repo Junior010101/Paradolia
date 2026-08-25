@@ -6,7 +6,7 @@
 
 <picture>![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-yellow)</picture>
 <picture>![Status](https://img.shields.io/badge/HTML-5-red?logo=html5)</picture>
-<picture>![Status](https://img.shields.io/badge/CSS-purple?logo=css)</picture>
+<picture>![Status](https://img.shields.io/badge/CSS-8A2BE2?logo=css)</picture>
 
 ## Licença do Projeto
 
