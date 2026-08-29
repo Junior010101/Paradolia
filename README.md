@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# Paradôlia
+<h1 align="center">Paradôlia | 🎨</h1>
 
 <picture>![logo-marca](./assets/icons/logo-marca.svg)</picture>
 > Algo que parece; É; Mas, não é;
