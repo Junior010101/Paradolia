@@ -37,3 +37,8 @@ Licensed under the SIL Open Font License, Version 1.1.
 
 Copyright 2026 Josh W. Comeau (<https://www.joshwcomeau.com/css/custom-css-reset/>)
 Licensed under the MIT License.
+
+### Hero Background Image ("A Quiet Day in Sinnoh")
+
+"A Quiet Day in Sinnoh" por Wynat (<https://lospec.com/gallery/wynat/a-quiet-day-in-sinnoh>).
+Disponibilizado na galeria Lospec. Todos os direitos reservados ao seu criador original.

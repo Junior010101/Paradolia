@@ -84,18 +84,19 @@ Contato: marcondesjunior2209@gmail.com
       type="font/ttf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/components/header.css" />
-    <link rel="stylesheet" href="styles/components/pagemap.css" />
-    <link rel="stylesheet" href="styles/components/hero.css" />
+    <link rel="stylesheet" href="./styles/components/pagemap.css" />
+    <link rel="stylesheet" href="./styles/components/button.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/hero.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
   </head>
   <body>
     <header class="header header--start">
-      <a href="/" title="Voltar ao topo">
+      <a href="#" title="Voltar ao topo">
         <img
-          src="/assets/images/logotipo.svg"
+          src="./assets/images/logotipo.svg"
           alt="Logotipo do Paradôlia"
           loading="eager"
           fetchpriority="high"
@@ -135,14 +136,44 @@ Contato: marcondesjunior2209@gmail.com
     <main class="main">
       <section class="main__hero-section">
         <img
-          src="assets/images/mascote.svg"
+          src="./assets/images/mascote.svg"
           alt="Mascote Paradôlia"
           class="main__hero-mascot"
           loading="eager"
           fetchpriority="high"
+          width="50%"
         />
-        <div class="main__hero-content"></div>
+        <svg
+          class="main__hero-vector"
+          width="1440"
+          height="350"
+          viewBox="0 0 1440 350"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 8.51324C7.2 2.91324 2 6.17991 0 8.51324L-1 349.013H1440.5V52.5132C1441.33 22.0132 1441.1 -22.5868 1433.5 43.0132C1425.9 108.613 1396.62 138.105 1361 114.013C1342.5 101.5 1326 78.744 1306 69.5132C1280 57.5132 1269.17 68.1799 1267 75.0132C1264 84.4748 1277.63 104.513 1282 123.013C1284.17 132.18 1284.8 154.813 1270 172.013C1255.2 189.213 1223.5 180.799 1210.5 171.513C1186 154.013 1188.33 106.847 1188 77.0132C1188 63.0132 1178.4 38.9132 1152 34.5132C1125.6 30.1132 1093.33 73.3466 1080.5 95.5132C1068.92 115.513 1055.5 123.513 1036 121.513C1019.5 119.821 1006.28 109.448 998 88.0132C989.5 66.0132 980.667 45.6799 963.5 41.0132C946.333 36.3466 913.6 40.0132 920 92.0132C926.4 144.013 915.667 166.347 909.5 171.013C904.5 175.68 891.1 182.213 877.5 171.013C863.9 159.813 872.196 117 863.5 92.0132C858.275 77 841.3 63.5132 826.5 67.5132C808 72.5132 801 92.0132 800.5 104.013C800 116.013 805.5 131.013 821.5 162.513C834.3 187.713 830.167 212.68 826.5 222.013C820.018 238.513 799.771 251.667 764 244.513C729 237.513 725.5 188.847 729 162.513C731.791 141.513 749.167 94.6799 749 71.0132C749 37.5132 696 30.5132 680.5 33.0132C644.5 38.8197 646.667 83.5132 637.5 107.513C626.997 135.013 612.6 148.313 591 145.513C569.4 142.713 557.3 92.5 547 81.0132C516.5 47 471 62.5132 451.5 81.0132C435.9 95.8132 432.333 133.513 432.5 150.513C432.5 159.013 430.6 163.713 443 224.513C455.4 285.313 443.5 311.444 440 319.513C434 333.347 413.4 355.613 379 334.013C344.6 312.413 364.667 252.013 379 224.513C396.333 189.013 419.9 106.913 375.5 62.5132C331.1 18.1132 281.184 39.0132 275 62.5132C270.833 78.3466 256 110.413 230 112.013C197.5 114.013 197 74.5132 195 45.0132C193.4 21.4132 182.667 7.51323 177.5 3.51323C170 -2.29318 150.1 -1.08677 138.5 8.51324C126.9 18.1132 122.333 36.8466 121.5 45.0132C120.224 57.5133 114.3 85.2132 73.5 88.0132C22.5 91.5132 9 15.5132 8 8.51324Z"
+          />
+        </svg>
+
+        <div class="main__hero-content">
+          <hgroup class="main__hero-slogan">
+            <h1 class="main__hero-title">
+              Estimule sua mente, vença o burnout criativo.
+            </h1>
+            <p class="main__hero-description">
+              Uma plataforma voltada para criativos de todas as idades, servindo
+              como muleta criativa na era da IA. Explore pontos de vista
+              distintos, forme insights e compartilhe-os com outros usuários!
+            </p>
+          </hgroup>
+          <div class="main__hero-bn-group">
+            <button class="button main__hero-button">Começar agora!</button>
+            <button class="button main__hero-button">Conhecer proposta</button>
+          </div>
+        </div>
       </section>
+      <section class="main__about-section"></section>
     </main>
   </body>
 </html>

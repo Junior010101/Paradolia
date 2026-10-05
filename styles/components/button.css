@@ -1,0 +1,25 @@
+/* 
+ * Estrutura BEM (Block, Element, Modifier) aplicada ao CSS:
+ * - Usar classes CSS para toda e qualquer estilização.
+ * - Usar block__element para elementos filhos do componente principal.
+ * - Usar block--modifier (ou block__element--modifier) para variações. 
+ */
+/* Block */
+.button {
+  --button-shadow-color: var(--cinza-secundario);
+  --button-background-color: var(--cinza-primario);
+  --button-text-color: var(--preto-primario);
+  --button-border-color: var(--branco-primario--opacity-50);
+
+  padding: 10px;
+  box-shadow: 0px 4px var(--button-shadow-color);
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border-color: var(--button-border-color);
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px;
+}
+.button:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
