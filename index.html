@@ -1,15 +1,148 @@
 <!doctype html>
+<!--
+                                                                     .-'''-.                        
+                                                   _______         '   _    \  .---.               
+_________   _...._                                 \  ___ `'.    /   /` '.   \ |   |.--.           
+\        |.'      '-.                               ' |--.\  \  .   |     \  ' |   ||__|           
+ \        .'```'.    '.          .-,.--.            | |    \  ' |   '      |  '|   |.--.           
+  \      |       \     \   __    |  .-. |    __     | |     |  '\    \     / / |   ||  |    __     
+   |     |        |    |.:--.'.  | |  | | .:--.'.   | |     |  | `.   ` ..' /  |   ||  | .:--.'.   
+   |      \      /    ./ |   \ | | |  | |/ |   \ |  | |     ' .'    '-...-'`   |   ||  |/ |   \ |  
+   |     |\`'-.-'   .' `" __ | | | |  '- `" __ | |  | |___.' /'                |   ||  |`" __ | |  
+   |     | '-....-'`    .'.''| | | |      .'.''| | /_______.'/                 |   ||__| .'.''| |  
+  .'     '.            / /   | |_| |     / /   | |_\_______|/                  '---'    / /   | |_ 
+'-----------'          \ \._,\ '/|_|     \ \._,\ '/                                     \ \._,\ '/ 
+                        `--'  `"          `--'  `"                                       `--'  `"   
+Desenvolvido por: Marcondes Paixão / github@junior010101
+Versão: 1.0.0 (2026)
+Contato: marcondesjunior2209@gmail.com
+------------------------------------------------
+"Algo que parece; é; mas não é"
+-->
 <html lang="pt-BR">
   <head>
+    <!-- 
+    Aqui jaz o mockup padrão de uma página proficional em HTML Living Standard (HTML5)
+    (segundo a W3C: `https://validator.w3.org`) <^~^>/.
+    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Estimule sua mente, vença o burnout criativo | Paradôlia</title>
+    <meta
+      name="description"
+      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia, encontre novos padrões e compartilhe suas interpretações na comunidade."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="#" />
+    <meta name="theme-color" content="#e45a35" />
+
+    <!-- Open Graph meta tags -->
+    <!--
+    Essas tags servem para a incorporação do site em produção em redes sociais, exemplo:
+    manda o link do `https://www.youtube.com` no meu privado do whatsapp (`tava pensando em colocar
+    meu numero aqui entre parênteses mas lembrei que fica publico no github`), ele vai criar um card
+    com o og:site_name e og:title, YouTube, e uma breve descrição (og:description), e mais importante,
+    com um banner do seu site, sendo ele o og-card.png (og:image).
+     -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="Paradôlia" />
+    <meta
+      property="og:title"
+      content="Estimule sua mente, vença o burnout criativo | Paradôlia"
+    />
+    <meta
+      property="og:description"
+      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia e compartilhe suas interpretações."
+    />
+    <meta property="og:image" content="#/og-card.png" />
+    <!-- Open Graph meta tags -->
+
+    <!-- 
+    Meus icones (tem pra navegador lagado, pra atual, pra apple-touch e pra caso o navegador force
+    modo escuro, tipo o opera-gx) 
+    -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any" />
     <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="favicon.webp" type="image/webp" sizes="48x48" />
     <link rel="apple-touch-icon" href="favicon-180x180.png" sizes="180x180" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Aqui é a aba fontes e estilos -->
+    <link
+      rel="preload"
+      href="assets/fonts/Inter-VariableFont_opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Montserrat-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/pagemap.css" />
+    <link rel="stylesheet" href="styles/components/hero.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header header--start">
+      <a href="/" title="Voltar ao topo">
+        <img
+          src="/assets/images/logotipo.svg"
+          alt="Logotipo do Paradôlia"
+          loading="eager"
+          fetchpriority="high"
+          width="156"
+          height="70"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#sobre" class="header__link">Sobre</a>
+          </li>
+          <li class="header__item">
+            <a href="#proposta" class="header__link">Proposta</a>
+          </li>
+          <li class="header__item">
+            <a href="#feed" class="header__link">Feed</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="nav-map" aria-label="Menu de seções">
+      <nav class="nav-map__nav">
+        <ul class="nav-map__list">
+          <li class="nav-map__item">
+            <a href="#sobre" class="nav-map__link">Sobre</a>
+          </li>
+          <li class="nav-map__item">
+            <a href="#proposta" class="nav-map__link">Proposta</a>
+          </li>
+          <li class="nav-map__item">
+            <a href="#feed" class="nav-map__link">Feed</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main">
+      <section class="main__hero-section">
+        <img
+          src="assets/images/mascote.svg"
+          alt="Mascote Paradôlia"
+          class="main__hero-mascot"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="main__hero-content"></div>
+      </section>
+    </main>
+  </body>
 </html>
