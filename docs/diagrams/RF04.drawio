@@ -1,0 +1,33 @@
+<mxfile host="65bd71144e">
+    <diagram name="Página-1" id="JjgkTG0gXN31Ot9IAN-d">
+        <mxGraphModel dx="206" dy="142" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="vpMj3IJevxU2YYd5ispY-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Página sobre" vertex="1">
+                    <mxGeometry height="320" width="530" x="480" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="vpMj3IJevxU2YYd5ispY-3" parent="vpMj3IJevxU2YYd5ispY-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Acessar a página" vertex="1">
+                    <mxGeometry height="80" width="120" x="20" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="vpMj3IJevxU2YYd5ispY-6" edge="1" parent="vpMj3IJevxU2YYd5ispY-1" source="vpMj3IJevxU2YYd5ispY-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="vpMj3IJevxU2YYd5ispY-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="vpMj3IJevxU2YYd5ispY-7" connectable="0" parent="vpMj3IJevxU2YYd5ispY-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" vertex="1">
+                    <mxGeometry relative="1" x="-0.1679" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vpMj3IJevxU2YYd5ispY-5" parent="vpMj3IJevxU2YYd5ispY-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Visualizar Informações de contato" vertex="1">
+                    <mxGeometry height="80" width="120" x="240" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="vpMj3IJevxU2YYd5ispY-4" edge="1" parent="1" source="vpMj3IJevxU2YYd5ispY-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="vpMj3IJevxU2YYd5ispY-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="vpMj3IJevxU2YYd5ispY-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Lead ou cliente&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="60" width="30" x="380" y="330" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
