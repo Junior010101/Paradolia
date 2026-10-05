@@ -1,0 +1,35 @@
+/* 
+ * Estrutura BEM (Block, Element, Modifier) aplicada ao CSS:
+ * - Usar classes CSS para toda e qualquer estilização.
+ * - Usar block__element para elementos filhos do componente principal.
+ * - Usar block--modifier (ou block__element--modifier) para variações. 
+ */
+/* Block */
+.main {
+  padding-top: 90px;
+  width: 100%;
+}
+
+/* Element */
+.main__hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/assets/images/imagem-do-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  image-rendering: pixelated;
+}
+
+.main__hero-mascot {
+  position: absolute;
+  bottom: 6vh;
+  right: 1vw;
+  width: 717px;
+  max-width: 45vw;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
