@@ -1,8 +1,15 @@
 <!-- markdownlint-disable MD033 -->
-<h1 align="center">Paradôlia | 🎨</h1>
+# Paradôlia
 
-<picture>![logo-marca](./assets/icons/logo-marca.svg)</picture>
-> Algo que parece; É; Mas, não é;
+<div align="right">
+    <picture><img src="./repo/mascote.png" alt="Mascote" /></picture>
+</div>
+
+> Algo que parece;
+>
+> É;
+>
+> Mas, não é;
 
 <picture>![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-yellow)</picture>
 <picture>![Status](https://img.shields.io/badge/HTML-5-red?logo=html5)</picture>
