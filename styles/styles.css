@@ -1,21 +1,47 @@
-@import url("./fonts.css");
-@import url("./reset.css");
-
 :root {
+  /* Minhas fontes */
   --font-titles: "Montserrat", sans-serif;
   --font-body: "Inter", sans-serif;
 
-  --fs-body: 16px;
-  --fs-h1: 42px;
-  --fs-h2: 32px;
-  --fs-h3: 24px;
-  --fs-h4: 20px;
-  --fs-h6: 14px;
-
+  /* Tamnaho de meus textinhos */
+  --fs-body: 1rem; /* 16px */
+  --fs-h1: 2.625rem; /* 42px */
+  --fs-h2: 2rem; /* 32px */
+  --fs-h3: 1.5rem; /* 24px */
+  --fs-h4: 1.25rem; /* 20px */
+  --fs-h6: 0.875rem; /* 14px */
   --color-text: #222222;
+
+  /* Aqui jaz minhas cores (lá do figma viu!!!! Nenhuma colocada por fora). */
+  --laranja-avermelhado-primario: #e45a35;
+
+  --laranja-primario: #f76205;
+
+  --bege-primario: #f9c37b;
+  --bege-secundario: #fbc782;
+
+  --bege-claro-primario: #fceeca;
+  --bege-claro-secundario: #fce7b8;
+
+  --cinza-primario: #d9d9d9;
+  --cinza-secundario: #8e8e8e;
+  --branco-primario: #ffffff;
+  --preto-primario: #000000;
+  --branco-primario--opacity-50: #ffffff80;
+}
+
+/* 
+ * CSS Base
+ * Aqui a estrutura BEM (Block, Element, Modifier) entra em excessão por ser um CSS global 
+ */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--font-body);
   font-size: var(--fs-body);
   color: var(--color-text);
