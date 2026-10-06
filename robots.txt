@@ -21,4 +21,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://https://paradolia.vercel.app/sitemap.xml
+Sitemap: https://paradolia.vercel.app/sitemap.xml
