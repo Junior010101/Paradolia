@@ -60,6 +60,10 @@ body {
   line-height: 1.5;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 p {
   font-family: var(--font-body);
   font-size: var(--fs-body);
