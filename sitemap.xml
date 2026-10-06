@@ -3,7 +3,7 @@
   
   <!-- Página Inicial -->
   <url>
-    <loc>https://#</loc>
+    <loc>https://paradolia.vercel.app</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- Página Principal -->
   <url>
-    <loc>https://#/home.html</loc>
+    <loc>https://paradolia.vercel.app/home.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
   <!-- Feed da Comunidade -->
   <url>
-    <loc>https://#/feed.html</loc>
+    <loc>https://paradolia.vercel.app/feed.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
   <!-- Página sobre -->
   <url>
-    <loc>https://#/sobre.html</loc>
+    <loc>https://paradolia.vercel.app/sobre.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
