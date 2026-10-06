@@ -27,3 +27,11 @@
   flex-direction: column;
   gap: 32px;
 }
+
+/* Id */
+#inicio {
+  scroll-margin-top: 100vh;
+}
+#footer {
+  scroll-margin-top: 250px;
+}

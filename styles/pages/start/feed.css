@@ -8,7 +8,7 @@
 .feed {
   position: relative;
   background-color: var(--laranja-primario);
-  box-shadow: 0px 100vh var(--laranja-primario);
+  box-shadow: 0 100vh 0 100vh var(--laranja-primario);
 }
 
 /* Element */
@@ -29,20 +29,20 @@
 }
 
 .feed__list::-webkit-scrollbar-track {
-  background-color: var(--preto-primario, #000000);
+  background-color: var(--preto-primario);
   border-radius: 50px;
   border-right: 100px solid transparent;
 }
 
 .feed__list::-webkit-scrollbar-thumb {
-  background-color: var(--laranja-secundario, #e26338);
+  background-color: var(--laranja-secundario);
   border-radius: 50px;
-  border: 8px solid var(--preto-primario, #000000);
+  border: 8px solid var(--preto-primario);
   background-clip: padding-box;
 }
 
 .feed__list::-webkit-scrollbar-thumb:hover {
-  background-color: #d1552e;
+  background-color: var(--laranja-avermelhado-primario);
 }
 
 .feed__slider-wrapper {
@@ -54,14 +54,12 @@
   content: "";
   position: absolute;
   top: 0;
-  /* Trava a altura do efeito até o fim dos cards, sem encostar na barra */
   bottom: 56px;
   width: 80px;
   z-index: 10;
-  pointer-events: none; /* Permite interagir/clicar nos cards normalmente */
+  pointer-events: none;
 }
 
-/* Degradê na esquerda */
 .feed__slider-wrapper::before {
   left: 0;
   background: linear-gradient(
@@ -71,7 +69,6 @@
   );
 }
 
-/* Degradê na direita */
 .feed__slider-wrapper::after {
   right: 0;
   background: linear-gradient(

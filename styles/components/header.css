@@ -66,7 +66,8 @@
 /* CSS Selector */
 body:has(#sobre:target) .header__link[href="#sobre"],
 body:has(#proposta:target) .header__link[href="#proposta"],
-body:has(#feed:target) .header__link[href="#feed"] {
+body:has(#feed:target) .header__link[href="#feed"],
+body:has(#footer:target) .header__link[href="#footer"] {
   color: var(--laranja-avermelhado-primario);
   font-weight: bold;
 }

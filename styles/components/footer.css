@@ -21,15 +21,14 @@
 /* Element */
 .footer__tab {
   position: absolute;
-  bottom: calc(100% - 190px);
+  top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: var(--laranja-avermelhado-primario);
-  border-radius: 40%;
-  padding-block: 150px;
-  width: 100%;
-  height: 35vh;
+  border-radius: 50%;
+  width: 90%;
   max-width: 1050px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +40,6 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-top: -150px;
 }
 
 .footer__section-container {
@@ -54,7 +52,6 @@
 }
 
 .footer__mascot {
-  max-width: 360px;
   object-fit: contain;
 }
 

@@ -100,10 +100,6 @@
 }
 
 /* CSS Selector */
-#inicio {
-  scroll-margin-top: 100vh;
-}
-
 body:has(#inicio:target) .nav-map__link[href="#inicio"],
 body:has(#sobre:target) .nav-map__link[href="#sobre"],
 body:has(#feed:target) .nav-map__link[href="#feed"],
