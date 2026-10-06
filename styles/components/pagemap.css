@@ -94,19 +94,23 @@
 }
 
 /* CSS Selector */
+#inicio {
+  scroll-margin-top: 100vh;
+}
+
+body:has(#inicio:target) .nav-map__link[href="#inicio"],
 body:has(#sobre:target) .nav-map__link[href="#sobre"],
-body:has(#proposta:target) .nav-map__link[href="#proposta"],
 body:has(#feed:target) .nav-map__link[href="#feed"] {
   color: var(--laranja-avermelhado-primario);
   font-weight: bold;
 }
 
+body:has(#inicio:target)
+  .nav-map:not(:hover):not(:focus-within)
+  .nav-map__item:has([href="#inicio"]),
 body:has(#sobre:target)
   .nav-map:not(:hover):not(:focus-within)
   .nav-map__item:has([href="#sobre"]),
-body:has(#proposta:target)
-  .nav-map:not(:hover):not(:focus-within)
-  .nav-map__item:has([href="#proposta"]),
 body:has(#feed:target)
   .nav-map:not(:hover):not(:focus-within)
   .nav-map__item:has([href="#feed"]) {
