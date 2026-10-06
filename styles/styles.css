@@ -17,6 +17,9 @@
 
   --laranja-primario: #f76205;
 
+  --amarelo-primario: #f6e676;
+  --amarelo-secundario: #f2e291;
+
   --bege-primario: #f9c37b;
   --bege-secundario: #fbc782;
 
@@ -26,16 +29,23 @@
   --bege-claro-secundario: #fce7b8;
 
   --cinza-primario: #d9d9d9;
+  --branco-primario--opacity-50: #ffffff80;
+
   --cinza-secundario: #8e8e8e;
   --branco-primario: #ffffff;
+
   --preto-primario: #000000;
-  --branco-primario--opacity-50: #ffffff80;
+  --preto-primario--opacity-25: #00000040;
 }
 
 /* 
  * CSS Base
  * Aqui a estrutura BEM (Block, Element, Modifier) entra em excessão por ser um CSS global 
  */
+/* [id] {
+  scroll-margin-top: 90px;
+} */
+
 html {
   scroll-behavior: smooth;
 }

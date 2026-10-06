@@ -1,0 +1,82 @@
+/* 
+ * Estrutura BEM (Block, Element, Modifier) aplicada ao CSS:
+ * - Usar classes CSS para toda e qualquer estilização.
+ * - Usar block__element para elementos filhos do componente principal.
+ * - Usar block--modifier (ou block__element--modifier) para variações. 
+ */
+/* Block */
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Element */
+.about__slogan {
+  display: flex;
+  flex-direction: column;
+  max-width: 506px;
+  gap: 40px;
+}
+
+.about__title {
+  color: var(--laranja-avermelhado-primario);
+}
+
+/* .about__description {
+} */
+
+.about__list {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about__item:not(:first-child):not(:last-child) {
+  grid-row: span 2;
+}
+
+.about__card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+  gap: 20px;
+  background-color: var(--amarelo-primario);
+  border-top: 50px solid var(--amarelo-secundario);
+  box-shadow: 0px 4px 4px var(--preto-primario--opacity-25);
+}
+
+.about__card-title {
+  text-align: center;
+}
+
+/* .about__card-description {
+} */
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .about {
+    flex-direction: column;
+  }
+  .about__item:not(:first-child):not(:last-child) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 745px) {
+  .about__list {
+    display: flex;
+    flex-direction: column;
+  }
+}

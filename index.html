@@ -84,13 +84,17 @@ Contato: marcondesjunior2209@gmail.com
       type="font/ttf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <link rel="stylesheet" href="./styles/components/header.css" />
     <link rel="stylesheet" href="./styles/components/pagemap.css" />
     <link rel="stylesheet" href="./styles/components/button.css" />
-    <link rel="stylesheet" href="./styles/components/header.css" />
-    <link rel="stylesheet" href="./styles/components/hero.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/fonts.css" />
-    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <link rel="stylesheet" href="./styles/pages/start/layout.css" />
+    <link rel="stylesheet" href="./styles/pages/start/hero.css" />
+    <link rel="stylesheet" href="./styles/pages/start/about.css" />
   </head>
   <body>
     <header class="header header--start">
@@ -110,9 +114,6 @@ Contato: marcondesjunior2209@gmail.com
             <a href="#sobre" class="header__link">Sobre</a>
           </li>
           <li class="header__item">
-            <a href="#proposta" class="header__link">Proposta</a>
-          </li>
-          <li class="header__item">
             <a href="#feed" class="header__link">Feed</a>
           </li>
         </ul>
@@ -125,26 +126,23 @@ Contato: marcondesjunior2209@gmail.com
             <a href="#sobre" class="nav-map__link">Sobre</a>
           </li>
           <li class="nav-map__item">
-            <a href="#proposta" class="nav-map__link">Proposta</a>
-          </li>
-          <li class="nav-map__item">
             <a href="#feed" class="nav-map__link">Feed</a>
           </li>
         </ul>
       </nav>
     </aside>
     <main class="main">
-      <section class="main__hero-section">
+      <section class="section hero">
         <img
           src="./assets/images/mascote.svg"
           alt="Mascote Paradôlia"
-          class="main__hero-mascot"
+          class="hero__mascot"
           loading="eager"
           fetchpriority="high"
           width="50%"
         />
         <svg
-          class="main__hero-vector"
+          class="hero__vector"
           width="1440"
           height="350"
           viewBox="0 0 1440 350"
@@ -156,24 +154,65 @@ Contato: marcondesjunior2209@gmail.com
           />
         </svg>
 
-        <div class="main__hero-content">
-          <hgroup class="main__hero-slogan">
-            <h1 class="main__hero-title">
+        <div class="hero__content">
+          <hgroup class="hero__slogan">
+            <h1 class="hero__title">
               Estimule sua mente, vença o burnout criativo.
             </h1>
-            <p class="main__hero-description">
+            <p class="hero__description">
               Uma plataforma voltada para criativos de todas as idades, servindo
               como muleta criativa na era da IA. Explore pontos de vista
               distintos, forme insights e compartilhe-os com outros usuários!
             </p>
           </hgroup>
-          <div class="main__hero-bn-group">
-            <button class="button main__hero-button">Começar agora!</button>
-            <button class="button main__hero-button">Conhecer proposta</button>
+          <div class="hero__bn-group">
+            <button class="button hero__button">Começar agora!</button>
+            <button class="button hero__button">Conhecer proposta</button>
           </div>
         </div>
       </section>
-      <section class="main__about-section"></section>
+      <section id="sobre" class="section about">
+        <hgroup class="about__slogan">
+          <h2 class="about__title">Perceba padroẽs!</h2>
+          <p class="about__description">
+            Às vezes, a verdadeira inspiração não vem de criar o inédito, mas de
+            aprender a enxergar o que sempre esteve lá. O Paradôlia utiliza a
+            entropia visual e a neurociência da percepção para transformar ruído
+            abstrato em estimulação criativa, combatendo o burnout de artistas
+            digitais e game devs.
+          </p>
+        </hgroup>
+        <ul class="about__list">
+          <li class="about__item">
+            <article class="about__card">
+              <h3 class="about__card-title">Entropia visual</h3>
+              <p class="about__card-description">
+                Nossos algoritmos geram composições abstratas e vetores únicos a
+                partir do ruído visual, criando em nossa tela principal um
+                ambiente livre de expectativas.
+              </p>
+            </article>
+          </li>
+          <li class="about__item">
+            <article class="about__card">
+              <h3 class="about__card-title">Motivação para continuar</h3>
+              <p class="about__card-description">
+                A cada iteração, você recebe uma mensagem motivacional única e
+                aleatória do nosso banco de inspirações.
+              </p>
+            </article>
+          </li>
+          <li class="about__item">
+            <article class="about__card">
+              <h3 class="about__card-title">Socialize e divirta-se</h3>
+              <p class="about__card-description">
+                Poste ou comente em novas ideias de outros usuários, afinal, a
+                união faz a força!
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
