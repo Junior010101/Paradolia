@@ -22,6 +22,10 @@
   border-radius: 10px;
   cursor: pointer;
 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   text-decoration: none;
 
   border-color: var(--button-border-color);

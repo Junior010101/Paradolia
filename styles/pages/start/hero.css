@@ -28,7 +28,7 @@
 
 .hero__vector {
   position: absolute;
-  bottom: -1px;
+  bottom: -1vh;
   left: 0;
   width: 100%;
   height: auto;

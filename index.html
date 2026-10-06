@@ -91,10 +91,12 @@ Contato: marcondesjunior2209@gmail.com
     <link rel="stylesheet" href="./styles/components/header.css" />
     <link rel="stylesheet" href="./styles/components/pagemap.css" />
     <link rel="stylesheet" href="./styles/components/button.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
 
     <link rel="stylesheet" href="./styles/pages/start/layout.css" />
     <link rel="stylesheet" href="./styles/pages/start/hero.css" />
     <link rel="stylesheet" href="./styles/pages/start/about.css" />
+    <link rel="stylesheet" href="./styles/pages/start/feed.css" />
   </head>
   <body>
     <header class="header header--start">
@@ -111,7 +113,7 @@ Contato: marcondesjunior2209@gmail.com
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="#sobre" class="header__link">Sobre</a>
+            <a href="#sobre" class="header__link">Proposta</a>
           </li>
           <li class="header__item">
             <a href="#feed" class="header__link">Feed</a>
@@ -139,94 +141,247 @@ Contato: marcondesjunior2209@gmail.com
     </aside>
     <main class="main">
       <section id="inicio" class="section hero">
-        <img
-          src="./assets/images/mascote.svg"
-          alt="Mascote Paradôlia"
-          class="hero__mascot"
-          loading="eager"
-          fetchpriority="high"
-          width="50%"
-        />
-        <svg
-          class="hero__vector"
-          width="1440"
-          height="350"
-          viewBox="0 0 1440 350"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8 8.51324C7.2 2.91324 2 6.17991 0 8.51324L-1 349.013H1440.5V52.5132C1441.33 22.0132 1441.1 -22.5868 1433.5 43.0132C1425.9 108.613 1396.62 138.105 1361 114.013C1342.5 101.5 1326 78.744 1306 69.5132C1280 57.5132 1269.17 68.1799 1267 75.0132C1264 84.4748 1277.63 104.513 1282 123.013C1284.17 132.18 1284.8 154.813 1270 172.013C1255.2 189.213 1223.5 180.799 1210.5 171.513C1186 154.013 1188.33 106.847 1188 77.0132C1188 63.0132 1178.4 38.9132 1152 34.5132C1125.6 30.1132 1093.33 73.3466 1080.5 95.5132C1068.92 115.513 1055.5 123.513 1036 121.513C1019.5 119.821 1006.28 109.448 998 88.0132C989.5 66.0132 980.667 45.6799 963.5 41.0132C946.333 36.3466 913.6 40.0132 920 92.0132C926.4 144.013 915.667 166.347 909.5 171.013C904.5 175.68 891.1 182.213 877.5 171.013C863.9 159.813 872.196 117 863.5 92.0132C858.275 77 841.3 63.5132 826.5 67.5132C808 72.5132 801 92.0132 800.5 104.013C800 116.013 805.5 131.013 821.5 162.513C834.3 187.713 830.167 212.68 826.5 222.013C820.018 238.513 799.771 251.667 764 244.513C729 237.513 725.5 188.847 729 162.513C731.791 141.513 749.167 94.6799 749 71.0132C749 37.5132 696 30.5132 680.5 33.0132C644.5 38.8197 646.667 83.5132 637.5 107.513C626.997 135.013 612.6 148.313 591 145.513C569.4 142.713 557.3 92.5 547 81.0132C516.5 47 471 62.5132 451.5 81.0132C435.9 95.8132 432.333 133.513 432.5 150.513C432.5 159.013 430.6 163.713 443 224.513C455.4 285.313 443.5 311.444 440 319.513C434 333.347 413.4 355.613 379 334.013C344.6 312.413 364.667 252.013 379 224.513C396.333 189.013 419.9 106.913 375.5 62.5132C331.1 18.1132 281.184 39.0132 275 62.5132C270.833 78.3466 256 110.413 230 112.013C197.5 114.013 197 74.5132 195 45.0132C193.4 21.4132 182.667 7.51323 177.5 3.51323C170 -2.29318 150.1 -1.08677 138.5 8.51324C126.9 18.1132 122.333 36.8466 121.5 45.0132C120.224 57.5133 114.3 85.2132 73.5 88.0132C22.5 91.5132 9 15.5132 8 8.51324Z"
+        <div class="section__container">
+          <img
+            src="./assets/images/mascote.svg"
+            alt="Mascote Paradôlia"
+            class="hero__mascot"
+            loading="eager"
+            fetchpriority="high"
+            width="50%"
           />
-        </svg>
+          <svg
+            class="hero__vector"
+            width="1440"
+            height="350"
+            viewBox="0 0 1440 350"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 8.51324C7.2 2.91324 2 6.17991 0 8.51324L-1 349.013H1440.5V52.5132C1441.33 22.0132 1441.1 -22.5868 1433.5 43.0132C1425.9 108.613 1396.62 138.105 1361 114.013C1342.5 101.5 1326 78.744 1306 69.5132C1280 57.5132 1269.17 68.1799 1267 75.0132C1264 84.4748 1277.63 104.513 1282 123.013C1284.17 132.18 1284.8 154.813 1270 172.013C1255.2 189.213 1223.5 180.799 1210.5 171.513C1186 154.013 1188.33 106.847 1188 77.0132C1188 63.0132 1178.4 38.9132 1152 34.5132C1125.6 30.1132 1093.33 73.3466 1080.5 95.5132C1068.92 115.513 1055.5 123.513 1036 121.513C1019.5 119.821 1006.28 109.448 998 88.0132C989.5 66.0132 980.667 45.6799 963.5 41.0132C946.333 36.3466 913.6 40.0132 920 92.0132C926.4 144.013 915.667 166.347 909.5 171.013C904.5 175.68 891.1 182.213 877.5 171.013C863.9 159.813 872.196 117 863.5 92.0132C858.275 77 841.3 63.5132 826.5 67.5132C808 72.5132 801 92.0132 800.5 104.013C800 116.013 805.5 131.013 821.5 162.513C834.3 187.713 830.167 212.68 826.5 222.013C820.018 238.513 799.771 251.667 764 244.513C729 237.513 725.5 188.847 729 162.513C731.791 141.513 749.167 94.6799 749 71.0132C749 37.5132 696 30.5132 680.5 33.0132C644.5 38.8197 646.667 83.5132 637.5 107.513C626.997 135.013 612.6 148.313 591 145.513C569.4 142.713 557.3 92.5 547 81.0132C516.5 47 471 62.5132 451.5 81.0132C435.9 95.8132 432.333 133.513 432.5 150.513C432.5 159.013 430.6 163.713 443 224.513C455.4 285.313 443.5 311.444 440 319.513C434 333.347 413.4 355.613 379 334.013C344.6 312.413 364.667 252.013 379 224.513C396.333 189.013 419.9 106.913 375.5 62.5132C331.1 18.1132 281.184 39.0132 275 62.5132C270.833 78.3466 256 110.413 230 112.013C197.5 114.013 197 74.5132 195 45.0132C193.4 21.4132 182.667 7.51323 177.5 3.51323C170 -2.29318 150.1 -1.08677 138.5 8.51324C126.9 18.1132 122.333 36.8466 121.5 45.0132C120.224 57.5133 114.3 85.2132 73.5 88.0132C22.5 91.5132 9 15.5132 8 8.51324Z"
+            />
+          </svg>
 
-        <div class="hero__content">
-          <hgroup class="hero__slogan">
-            <h1 class="hero__title">
-              Estimule sua mente, vença o burnout criativo.
-            </h1>
-            <p class="hero__description">
-              Uma plataforma voltada para criativos de todas as idades, servindo
-              como muleta criativa na era da IA. Explore pontos de vista
-              distintos, forme insights e compartilhe-os com outros usuários!
-            </p>
-          </hgroup>
-          <div class="hero__bn-group">
-            <button class="button hero__button">Começar agora!</button>
-            <a href="#sobre" class="button hero__button">Conhecer proposta</a>
+          <div class="hero__content">
+            <hgroup class="hero__slogan">
+              <h1 class="hero__title">
+                Estimule sua mente, vença o burnout criativo.
+              </h1>
+              <p class="hero__description">
+                Uma plataforma voltada para criativos de todas as idades,
+                servindo como muleta criativa na era da IA. Explore pontos de
+                vista distintos, forme insights e compartilhe-os com outros
+                usuários!
+              </p>
+            </hgroup>
+            <div class="hero__bn-group">
+              <button class="button hero__button">Começar agora!</button>
+              <a href="#sobre" class="button hero__button">Conhecer proposta</a>
+            </div>
           </div>
         </div>
       </section>
       <section id="sobre" class="section about">
-        <hgroup class="about__slogan">
-          <h2 class="about__title">Perceba padroẽs!</h2>
-          <p class="about__description">
-            Às vezes, a verdadeira inspiração não vem de criar o inédito, mas de
-            aprender a enxergar o que sempre esteve lá. O Paradôlia utiliza a
-            entropia visual e a neurociência da percepção para transformar ruído
-            abstrato em estimulação criativa, combatendo o burnout de artistas
-            digitais e game devs.
-          </p>
-        </hgroup>
-        <ul class="about__list">
-          <li class="about__item">
-            <article class="about__card">
-              <h3 class="about__card-title">Entropia visual</h3>
-              <p class="about__card-description">
-                Nossos algoritmos geram composições abstratas e vetores únicos a
-                partir do ruído visual, criando em nossa tela principal um
-                ambiente livre de expectativas.
-              </p>
-            </article>
-          </li>
-          <li class="about__item">
-            <article class="about__card">
-              <h3 class="about__card-title">Motivação para continuar</h3>
-              <p class="about__card-description">
-                A cada iteração, você recebe uma mensagem motivacional única e
-                aleatória do nosso banco de inspirações.
-              </p>
-            </article>
-          </li>
-          <li class="about__item">
-            <article class="about__card">
-              <h3 class="about__card-title">Socialize e divirta-se</h3>
-              <p class="about__card-description">
-                Poste ou comente em novas ideias de outros usuários, afinal, a
-                união faz a força!
-              </p>
-            </article>
-          </li>
-        </ul>
+        <div class="section__container about__container">
+          <hgroup class="about__slogan">
+            <h2 class="about__title">Perceba padroẽs!</h2>
+            <p class="about__description">
+              Às vezes, a verdadeira inspiração não vem de criar o inédito, mas
+              de aprender a enxergar o que sempre esteve lá. O Paradôlia utiliza
+              a entropia visual e a neurociência da percepção para transformar
+              ruído abstrato em estimulação criativa, combatendo o burnout de
+              artistas digitais e game devs.
+            </p>
+          </hgroup>
+          <ul class="about__list">
+            <li class="about__item">
+              <article class="about__card">
+                <h3 class="about__card-title">Entropia visual</h3>
+                <p class="about__card-description">
+                  Nossos algoritmos geram composições abstratas e vetores únicos
+                  a partir do ruído visual, criando em nossa tela principal um
+                  ambiente livre de expectativas.
+                </p>
+              </article>
+            </li>
+            <li class="about__item">
+              <article class="about__card">
+                <h3 class="about__card-title">Motivação para continuar</h3>
+                <p class="about__card-description">
+                  A cada iteração, você recebe uma mensagem motivacional única e
+                  aleatória do nosso banco de inspirações.
+                </p>
+              </article>
+            </li>
+            <li class="about__item">
+              <article class="about__card">
+                <h3 class="about__card-title">Socialize e divirta-se</h3>
+                <p class="about__card-description">
+                  Poste ou comente em novas ideias de outros usuários, afinal, a
+                  união faz a força!
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="feed" class="feed">
-        <h2 class="feed__title">Explore nosso Feed!</h2>
-        <ul class="feed__list">
-          <li class="feed__item">
-            <article class="feed__post"></article>
-          </li>
-        </ul>
+      <section id="feed" class="section feed">
+        <div class="section__container">
+          <h2 class="feed__title">Explore nosso Feed!</h2>
+          <div class="feed__slider-wrapper">
+            <ul class="feed__list">
+              <li class="feed__item">
+                <article class="feed__post">
+                  <img
+                    class="feed__post-image"
+                    src="./assets/images/card-do-feed-1.png"
+                    width="380"
+                    height="527"
+                    alt="Ilustração em estilo anime de uma personagem de perfil com capuz azul, com o rosto e cabelos preenchidos por padrões de ondas de mar que lembram a famosa xilogravura japonesa 'A Grande Onda de Kanagawa'."
+                  />
+                  <div class="feed__content">
+                    <hgroup class="feed__post-slogan">
+                      <h3 class="feed__post-title">
+                        Quando a Arte Ultrapassa os Limites da Tela.
+                      </h3>
+                      <p class="feed__post-description">
+                        Já parou para reparar nos mínimos detalhes daquela cena
+                        de anime que te deixou sem palavras? Mais do que simples
+                        desenhos...
+                      </p>
+                    </hgroup>
+                    <time class="feed_post-date" datetime="0000-00-00"
+                      >00/00/0000</time
+                    >
+                  </div>
+                </article>
+              </li>
+              <li class="feed__item">
+                <article class="feed__post">
+                  <img
+                    class="feed__post-image"
+                    src="./assets/images/card-do-feed-2.png"
+                    width="380"
+                    height="527"
+                    alt="Ilustração noturna de uma casa acolhedora e uma árvore de galhos secos sob uma grande lua cheia alaranjada."
+                  />
+                  <div class="feed__content">
+                    <hgroup class="feed__post-slogan">
+                      <h3 class="feed__post-title">
+                        Do Rascunho à Obra-Prima.
+                      </h3>
+                      <p class="feed__post-description">
+                        Aqueles cenários de tirar o fôlego nos animes não surgem
+                        por acaso. Por trás de cada céu estrelado, cidade
+                        cyberpunk...
+                      </p>
+                    </hgroup>
+                    <time class="feed_post-date" datetime="0000-00-00"
+                      >00/00/0000</time
+                    >
+                  </div>
+                </article>
+              </li>
+              <li class="feed__item">
+                <article class="feed__post">
+                  <img
+                    class="feed__post-image"
+                    src="./assets/images/card-do-feed-3.png"
+                    width="380"
+                    height="527"
+                    alt="Ilustração artística da silhueta de uma pessoa de costas a contemplar o nascer do sol reluzente, envolvida por uma explosão de chamas vibrantes em tons de amarelo, laranja e preto."
+                  />
+                  <div class="feed__content">
+                    <hgroup class="feed__post-slogan">
+                      <h3 class="feed__post-title">
+                        O que você vai descobrir hoje.
+                      </h3>
+                      <p class="feed__post-description">
+                        A verdadeira arte não é apenas aquela que admiramos de
+                        longe, mas a que consegue mexer com a gente por...
+                      </p>
+                    </hgroup>
+                    <time class="feed_post-date" datetime="0000-00-00"
+                      >00/00/0000</time
+                    >
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
+    <footer id="footer" class="footer footer--start">
+      <div class="footer__tab">
+        <hgroup class="footer__slogan">
+          <h2 class="footer__title">Paradôlia</h2>
+          <h3 class="footer__subtitle">
+            Reconectando sua mente através da entropia visual.
+          </h3>
+        </hgroup>
+      </div>
+
+      <div class="footer__section-container">
+        <img
+          src="./assets/images/logomarca.svg"
+          alt="Mascote Paradôlia"
+          class="footer__mascot"
+          width="40%"
+          loading="eager"
+          fetchpriority="high"
+        />
+
+        <div class="footer__menus">
+          <section class="footer__section">
+            <h3 class="footer__section-title">NAVEGAÇÃO</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#sobre">Proposta</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#feed">Feed</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Sobre</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer__section">
+            <h3 class="footer__section-title">FERRAMENTAS</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Gerador SVG</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Painel Social</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer__section">
+            <h3 class="footer__section-title">CONTATO</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">GitHub</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">LinkedIn</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">E-Mail</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Paradôlia — Projeto Acadêmico | Web Coding
+        </p>
+        <a href="#" class="button footer__button">&uarr; Voltar ao Topo</a>
+      </div>
+    </footer>
   </body>
 </html>

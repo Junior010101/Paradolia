@@ -1,0 +1,136 @@
+/* 
+ * Estrutura BEM (Block, Element, Modifier) aplicada ao CSS:
+ * - Usar classes CSS para toda e qualquer estilização.
+ * - Usar block__element para elementos filhos do componente principal.
+ * - Usar block--modifier (ou block__element--modifier) para variações. 
+ */
+/* Block */
+.feed {
+  position: relative;
+  background-color: var(--laranja-primario);
+  box-shadow: 0px 100vh var(--laranja-primario);
+}
+
+/* Element */
+.feed__title {
+  color: var(--branco-primario);
+  margin-bottom: 50px;
+}
+
+.feed__list {
+  display: flex;
+  overflow-x: auto;
+  gap: 50px;
+  padding-bottom: 24px;
+}
+
+.feed__list::-webkit-scrollbar {
+  height: 32px;
+}
+
+.feed__list::-webkit-scrollbar-track {
+  background-color: var(--preto-primario, #000000);
+  border-radius: 50px;
+  border-right: 100px solid transparent;
+}
+
+.feed__list::-webkit-scrollbar-thumb {
+  background-color: var(--laranja-secundario, #e26338);
+  border-radius: 50px;
+  border: 8px solid var(--preto-primario, #000000);
+  background-clip: padding-box;
+}
+
+.feed__list::-webkit-scrollbar-thumb:hover {
+  background-color: #d1552e;
+}
+
+.feed__slider-wrapper {
+  position: relative;
+}
+
+.feed__slider-wrapper::before,
+.feed__slider-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /* Trava a altura do efeito até o fim dos cards, sem encostar na barra */
+  bottom: 56px;
+  width: 80px;
+  z-index: 10;
+  pointer-events: none; /* Permite interagir/clicar nos cards normalmente */
+}
+
+/* Degradê na esquerda */
+.feed__slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--laranja-primario) 0%,
+    transparent 100%
+  );
+}
+
+/* Degradê na direita */
+.feed__slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--laranja-primario) 0%,
+    transparent 100%
+  );
+}
+
+.feed__item {
+  user-select: none;
+}
+
+.feed__post {
+  position: relative;
+  width: 380px;
+  height: 527px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.feed__post-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 1;
+}
+
+.feed__content {
+  background-color: var(--preto-primario--opacity-50);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+.feed__post-slogan {
+  padding-inline: 20px;
+  color: var(--branco-primario);
+}
+/* 
+.feed__post-title {
+}
+
+.feed__post-description {
+} */
+
+.feed_post-date {
+  position: relative;
+  z-index: 2;
+  color: var(--branco-primario--opacity-50);
+  padding-inline: 24px;
+  padding-block: 10px 24px;
+}

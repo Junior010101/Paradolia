@@ -5,7 +5,7 @@
  * - Usar block--modifier (ou block__element--modifier) para variações. 
  */
 /* Block */
-.about {
+.about__container {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -65,7 +65,7 @@
 
 /* Media Queries */
 @media (max-width: 820px) {
-  .about {
+  .about__container {
     flex-direction: column;
   }
   .about__item:not(:first-child):not(:last-child) {
