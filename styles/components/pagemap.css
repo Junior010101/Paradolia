@@ -52,6 +52,12 @@
   height: 2px;
   background-color: var(--cinza-primario);
 }
+.nav-map__item:first-child {
+  width: 20px;
+}
+.nav-map__item:last-child {
+  width: 12px;
+}
 .nav-map:hover .nav-map__item,
 .nav-map:focus-within .nav-map__item {
   width: auto;
@@ -100,7 +106,8 @@
 
 body:has(#inicio:target) .nav-map__link[href="#inicio"],
 body:has(#sobre:target) .nav-map__link[href="#sobre"],
-body:has(#feed:target) .nav-map__link[href="#feed"] {
+body:has(#feed:target) .nav-map__link[href="#feed"],
+body:has(#footer:target) .nav-map__link[href="#footer"] {
   color: var(--laranja-avermelhado-primario);
   font-weight: bold;
 }
@@ -113,7 +120,10 @@ body:has(#sobre:target)
   .nav-map__item:has([href="#sobre"]),
 body:has(#feed:target)
   .nav-map:not(:hover):not(:focus-within)
-  .nav-map__item:has([href="#feed"]) {
+  .nav-map__item:has([href="#feed"]),
+body:has(#footer:target)
+  .nav-map:not(:hover):not(:focus-within)
+  .nav-map__item:has([href="#footer"]) {
   background-color: var(--preto-primario);
   width: 24px;
 }
