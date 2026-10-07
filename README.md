@@ -50,3 +50,8 @@ Disponibilizado na galeria Lospec. Todos os direitos reservados ao seu criador o
 * **Winter Cottage Full Moon Night:** Criada por [PixelLabs](https://pixabay.com/users/pixellabs-44988775/) via [Pixabay](https://pixabay.com/illustrations/winter-cottage-full-moon-night-10417187/).
 
 Disponibilizadas sob a [Licença de Conteúdo do Pixabay](https://pixabay.com/service/license-summary/).
+
+### Background Image ("Collapse of Meanings")
+
+"Collapse of Meanings" por Pepe Mescuzi (<https://lospec.com/gallery/pepe-mescuzi/collapse-of-meanings>).
+Disponibilizado na galeria Lospec. Todos os direitos reservados ao seu criador original.
