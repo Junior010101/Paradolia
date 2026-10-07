@@ -13,18 +13,13 @@
   gap: 10px;
 }
 
-.motivational-feed__title {
+.motivational-feed__section-title {
   font-family: var(--font-titles);
   font-size: 1.125rem;
   font-weight: 700;
+  border: none;
+  background-color: var(--branco-primario);
   color: var(--color-text);
-}
-
-.motivational-feed__chevron {
-  width: 16px;
-  height: 10px;
-  stroke: var(--color-text);
-  flex-shrink: 0;
 }
 
 .motivational-feed__list {
@@ -62,7 +57,9 @@
   flex-direction: column;
   gap: 16px;
   box-shadow: 0 2px 8px var(--preto-primario--opacity-25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .motivational-feed__card:hover {
