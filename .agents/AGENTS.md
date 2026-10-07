@@ -26,6 +26,7 @@ Todas as novas páginas, componentes e refatorações devem respeitar rigorosame
 ### 2.2 Escala Tipográfica (`styles/styles.css`)
 
 Fontes oficiais importadas localmente em `assets/fonts/`:
+
 - **Títulos (`--font-titles`)**: `"Montserrat", sans-serif`
 - **Corpo e Textos (`--font-body`)**: `"Inter", sans-serif`
 
@@ -73,7 +74,7 @@ Fontes oficiais importadas localmente em `assets/fonts/`:
 
 ## 3. Estrutura e Organização de Arquivos
 
-```
+```bash
 Paradôlia/
 ├── .agents/
 │   ├── AGENTS.md               # Este manual operacional
@@ -161,7 +162,8 @@ Todo arquivo CSS em `styles/components/` ou `styles/pages/` deve obrigatoriament
 }
 ```
 
-### Regras de Qualidade CSS:
+### Regras de Qualidade CSS
+
 - **Sem propriedades redundantes:** Nunca repita propriedades que já estão definidas no bloco pai ou em estados base (ex.: não redeclarar `display`, `padding` ou `font-size` em `:hover` a menos que seu valor mude).
 - **Comentários mínimos e úteis:** Insira comentários apenas quando houver um comportamento não trivial (ex.: explicar uma transição complexa ou uso de seletores `:has()`). Não encha o código de comentários óbvios.
 
