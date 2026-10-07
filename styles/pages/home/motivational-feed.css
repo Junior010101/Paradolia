@@ -1,0 +1,135 @@
+/* Block */
+.motivational-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Element */
+.motivational-feed__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.motivational-feed__title {
+  font-family: var(--font-titles);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.motivational-feed__chevron {
+  width: 16px;
+  height: 10px;
+  stroke: var(--color-text);
+  flex-shrink: 0;
+}
+
+.motivational-feed__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 16px;
+  padding-block: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--preto-primario) var(--cinza-primario);
+}
+
+.motivational-feed__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.motivational-feed__list::-webkit-scrollbar-track {
+  background-color: var(--cinza-primario);
+  border-radius: 4px;
+}
+
+.motivational-feed__list::-webkit-scrollbar-thumb {
+  background-color: var(--preto-primario);
+  border-radius: 4px;
+}
+
+.motivational-feed__card {
+  background-color: var(--branco-primario);
+  border: 1px solid var(--bege-primario);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 2px 8px var(--preto-primario--opacity-25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.motivational-feed__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--preto-primario--opacity-25);
+}
+
+.motivational-feed__card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.motivational-feed__card-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.motivational-feed__card-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.motivational-feed__card-author {
+  font-family: var(--font-titles);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--laranja-avermelhado-primario);
+}
+
+.motivational-feed__card-category {
+  font-size: 0.75rem;
+  color: var(--bege-escuro-primario);
+}
+
+.motivational-feed__card-quote {
+  font-family: var(--font-titles);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.motivational-feed__card-divider {
+  width: 40px;
+  height: 3px;
+  background-color: var(--laranja-primario);
+  border: none;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.motivational-feed__card-body {
+  font-size: var(--fs-body);
+  color: var(--cinza-secundario);
+  line-height: 1.5;
+}
+
+/* Modifiers */
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .motivational-feed__list {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+}

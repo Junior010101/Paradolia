@@ -1,0 +1,67 @@
+/* Block */
+.generator {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Element */
+.generator__badge {
+  align-self: flex-start;
+  background-color: var(--laranja-avermelhado-primario);
+  color: var(--branco-primario);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 50px;
+}
+
+.generator__canvas {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px var(--preto-primario--opacity-25);
+  background-color: #1a1a2e;
+}
+
+.generator__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.generator__button {
+  --button-background-color: var(--laranja-primario);
+  --button-text-color: var(--branco-primario);
+  --button-shadow-color: var(--laranja-avermelhado-primario);
+  --button-border-color: transparent;
+
+  align-self: center;
+  margin-top: 10px;
+  font-weight: 700;
+  padding-inline: 72px;
+  padding-block: 12px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.generator__button-icon {
+  width: 20px;
+  height: 25px;
+  object-fit: contain;
+}
+
+/* Modifiers */
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .generator__button {
+    width: 100%;
+    max-width: 340px;
+    justify-content: center;
+  }
+}

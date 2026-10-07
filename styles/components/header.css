@@ -35,20 +35,69 @@
   color: var(--cinza-secundario);
 }
 
+.header__brand-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__button {
+  --button-background-color: var(--laranja-primario);
+  --button-shadow-color: var(--laranja-avermelhado-primario);
+  --button-border-color: transparent;
+}
+
+.header__hamburger {
+  width: 34px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.header__hamburger-line {
+  width: 22px;
+  height: 3px;
+  background-color: var(--branco-primario);
+  border-radius: 2px;
+}
+
+.header__brand-title {
+  color: var(--laranja-avermelhado-primario);
+  font-size: var(--fs-h3);
+  font-weight: 700;
+}
+
+.header__login-button {
+  --button-background-color: var(--laranja-primario);
+  --button-shadow-color: var(--laranja-avermelhado-primario);
+  --button-text-color: var(--branco-primario);
+  --button-border-color: transparent;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 10px 24px;
+}
+
 /* Modifiers */
 .header--start {
   justify-content: center;
 }
-/* .header--home {
-} */
 
-/* 
- * Menção honroza ao javascript, possivel aplicação de reatividade.
- * .header__link--active {
- *   color: var(--laranja-avermelhado-primario);
- *   font-weight: bold;
- * } 
- */
+.header--home {
+  max-width: 1280px;
+  width: calc(100% - 80px);
+  margin: 20px auto 0 auto;
+  border-radius: 12px;
+  border: 1px solid var(--cinza-primario);
+  justify-content: space-between;
+  position: relative;
+  padding-inline: 24px;
+  box-shadow: 0 4px 0px var(--cinza-primario);
+}
 
 /* Media Queries */
 @media screen and (max-width: 820px) {
@@ -60,6 +109,19 @@
   }
   .header__nav {
     display: block;
+  }
+  .header--home {
+    width: calc(100% - 40px);
+    margin: 12px auto 0 auto;
+    padding-inline: 16px;
+    min-height: 72px;
+  }
+  .header__brand-title {
+    font-size: 1.25rem;
+  }
+  .header__login-button {
+    padding: 8px 16px;
+    font-size: 0.875rem;
   }
 }
 

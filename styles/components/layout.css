@@ -6,7 +6,6 @@
  */
 /* Block */
 .main {
-  padding-top: 90px;
   width: 100%;
 }
 
@@ -18,6 +17,13 @@
 }
 
 /* Element */
+.start__main {
+  padding-top: 90px;
+}
+.about__main {
+  padding-top: 90px;
+}
+
 .section__container {
   width: 100%;
   max-width: 1280px;
@@ -39,4 +45,12 @@
   .section__container {
     padding-inline: 20px;
   }
+}
+
+/* Id */
+#inicio {
+  scroll-margin-top: 100vh;
+}
+#footer {
+  scroll-margin-top: 250px;
 }

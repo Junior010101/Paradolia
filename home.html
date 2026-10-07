@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+                                                                        .-'''-.                        
+                                                      _______         '   _    \  .–––.               
+    _________   _...._                                \  ___ `'.    /   /` '.   \ |   |.––.           
+    \        |.'      '-.                              ' |––.\  \  .   |     \  ' |   ||__|           
+    \        .'```'.    '.          .-,.––.            | |    \  ' |   '      |  '|   |.––.           
+      \      |       \    \   __    |  .-. |    __     | |     |  '\    \     / / |   ||  |    __     
+      |     |        |    |.:––.'.  | |  | | .:––.'.   | |     |  | `.   ` ..' /  |   ||  | .:––.'.   
+      |      \      /    ./ |   \ | | |  | |/ |   \ |  | |     ' .'    '-...-'`   |   ||  |/ |   \ |  
+      |     |\`'-.-'   .' `" __ | | | |  '- `" __ | |  | |___.' /'                |   ||  |`" __ | |  
+      |     | '-....-'`    .'.''| | | |      .'.''| | /_______.'/                 |   ||__| .'.''| |  
+      .'     '.           / /   | |_| |     / /   | |_\_______|/                  '–––'    / /   | |_ 
+    '––––––––––-'         \ \._,\ '/|_|     \ \._,\ '/                                     \ \._,\ '/ 
+                            `––'  `"          `––'  `"                                       `––'  `"   
+    Desenvolvido por: Marcondes Paixão / github@junior010101
+    Versão: 1.0.0 (2026)
+    Contato: marcondesjunior2209@gmail.com
+    ========================================================
+    "Algo que parece; é; mas não é"
+    -->
+    <!-- 
+    Aqui jaz o mockup padrão de uma página proficional em HTML Living Standard (HTML5)
+    (segundo a W3C: `https://validator.w3.org`) <^~^>/.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Paradôlia – Inspiração e Entropia Visual</title>
+    <meta
+      name="description"
+      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia, encontre novos padrões e compartilhe suas interpretações na comunidade."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://paradolia.vercel.app/home.html" />
+    <meta name="theme-color" content="#e45a35" />
+
+    <!-- Open Graph meta tags -->
+    <!--
+    Essas tags servem para a incorporação do site em produção em redes sociais, exemplo:
+    manda o link do `https://www.youtube.com` no meu privado do whatsapp (`tava pensando em colocar
+    meu numero aqui entre parênteses mas lembrei que fica publico no github`), ele vai criar um card
+    com o og:site_name e og:title, YouTube, e uma breve descrição (og:description), e mais importante,
+    com um banner do seu site, sendo ele o og-card.png (og:image).
+     -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paradolia.vercel.app/home.html" />
+    <meta property="og:site_name" content="Paradôlia" />
+    <meta
+      property="og:title"
+      content="Paradôlia — Inspiração e Entropia Visual"
+    />
+    <meta
+      property="og:description"
+      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia e compartilhe suas interpretações."
+    />
+    <meta
+      property="og:image"
+      content="https://paradolia.vercel.app/og-card.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://paradolia.vercel.app/og-card.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- 
+    Meus icones (tem pra navegador lagado, pra atual, pra apple-touch e pra caso o navegador force
+    modo escuro, tipo o opera-gx) 
+    -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="favicon.webp" type="image/webp" sizes="48x48" />
+    <link rel="apple-touch-icon" href="favicon-180x180.png" sizes="180x180" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Aqui é a aba fontes e estilos -->
+    <link
+      rel="preload"
+      href="./assets/fonts/Inter-VariableFont_opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/Montserrat-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <link rel="stylesheet" href="./styles/components/button.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/layout.css" />
+    <link rel="stylesheet" href="./styles/components/sidebar.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+
+    <link rel="stylesheet" href="./styles/pages/home/home-layout.css" />
+    <link rel="stylesheet" href="./styles/pages/home/generator.css" />
+    <link rel="stylesheet" href="./styles/pages/home/motivational-feed.css" />
+  </head>
+  <body>
+    <header class="header header--home">
+      <div class="header__brand-group">
+        <button
+          popovertarget="sidebar-menu"
+          class="button header__button"
+          aria-label="Abrir menu de navegação"
+          aria-controls="sidebar-menu"
+        >
+          <span class="header__hamburger" aria-hidden="true">
+            <span class="header__hamburger-line"></span>
+            <span class="header__hamburger-line"></span>
+            <span class="header__hamburger-line"></span>
+          </span>
+        </button>
+        <h1 class="header__brand-title">Paradôlia</h1>
+      </div>
+      <button href="#" class="button header__login-button">
+        Iniciar sessão
+      </button>
+    </header>
+    <aside id="sidebar-menu" popover class="sidebar">
+      <div class="sidebar__header">
+        <img
+          src="./assets/images/logotipo.svg"
+          alt="Logotipo do Paradôlia"
+          class="sidebar__logo"
+          width="156"
+          height="70"
+        />
+        <button
+          popovertarget="sidebar-menu"
+          popovertargetaction="hide"
+          class="button sidebar__close-button"
+          aria-label="Fechar menu de navegação"
+        >
+          <img
+            src="./assets/icons/tab-icon.svg"
+            alt=""
+            class="sidebar__close-icon"
+            aria-hidden="true"
+            width="20"
+            height="26"
+          />
+        </button>
+      </div>
+      <nav class="sidebar__nav" aria-label="Menu principal">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="home.html" class="button sidebar__button">Inicio</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="button sidebar__button">Social</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="sobre-retorno-home.html" class="button sidebar__button"
+              >Sobre</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main">
+      <section class="section" aria-label="Gerador e Mensagens">
+        <div class="section__container">
+          <h1 class="visually-hidden">
+            Paradôlia — Gerador de Entropia Visual e Inspiração
+          </h1>
+
+          <div class="home-layout">
+            <div class="home-layout__column">
+              <section class="generator" aria-labelledby="gerador-titulo">
+                <span class="generator__badge" id="gerador-titulo"
+                  >Você consegue!</span
+                >
+                <div class="generator__canvas">
+                  <img
+                    src="./assets/images/svg-gerado.png"
+                    alt="Padrão abstrato gerado com linhas coloridas entrelaçadas"
+                    class="generator__image"
+                    width="700"
+                    height="440"
+                    loading="eager"
+                    fetchpriority="high"
+                  />
+                </div>
+                <button type="button" class="button generator__button">
+                  <img
+                    src="./assets/icons/dice-icon.svg"
+                    alt=""
+                    class="generator__button-icon"
+                    aria-hidden="true"
+                    width="20"
+                    height="25"
+                  />
+                  <span class="generator__button-text">Gerar novo padrão</span>
+                </button>
+              </section>
+            </div>
+            <div class="home-layout__column">
+              <section class="motivational-feed" aria-labelledby="feed-titulo">
+                <header class="motivational-feed__header">
+                  <h2 class="motivational-feed__title" id="feed-titulo">
+                    Mensagens motivacionais
+                  </h2>
+                  <svg
+                    class="motivational-feed__chevron"
+                    width="16"
+                    height="10"
+                    viewBox="0 0 16 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </header>
+                <div class="motivational-feed__list">
+                  <article class="motivational-feed__card">
+                    <header class="motivational-feed__card-header">
+                      <img
+                        src="./assets/images/paradolia-perfil.png"
+                        alt=""
+                        class="motivational-feed__card-avatar"
+                        aria-hidden="true"
+                        width="36"
+                        height="36"
+                      />
+                      <div class="motivational-feed__card-author-info">
+                        <span class="motivational-feed__card-author"
+                          >Paradôlia</span
+                        >
+                        <span class="motivational-feed__card-category"
+                          >Inspiração</span
+                        >
+                      </div>
+                    </header>
+                    <h3 class="motivational-feed__card-quote">
+                      Sua arte não precisa agradar a todo mundo para ter valor;
+                      ela precisa apenas ser verdadeira.
+                    </h3>
+                    <hr
+                      class="motivational-feed__card-divider"
+                      aria-hidden="true"
+                    />
+                    <p class="motivational-feed__card-body">
+                      Acredite no seu olhar e permita que sua criação floresça
+                      sem a necessidade de aprovação.
+                    </p>
+                  </article>
+                  <article class="motivational-feed__card">
+                    <header class="motivational-feed__card-header">
+                      <img
+                        src="./assets/images/paradolia-perfil.png"
+                        alt=""
+                        class="motivational-feed__card-avatar"
+                        aria-hidden="true"
+                        width="36"
+                        height="36"
+                      />
+                      <div class="motivational-feed__card-author-info">
+                        <span class="motivational-feed__card-author"
+                          >Paradôlia</span
+                        >
+                        <span class="motivational-feed__card-category"
+                          >Inspiração</span
+                        >
+                      </div>
+                    </header>
+                    <h3 class="motivational-feed__card-quote">
+                      Projetar não é apenas sobre pixels bonitos ou formas
+                      perfeitas, mas sobre resolver a dor de alguém de forma
+                      invisível e elegante.
+                    </h3>
+                    <hr
+                      class="motivational-feed__card-divider"
+                      aria-hidden="true"
+                    />
+                    <p class="motivational-feed__card-body">
+                      O código que você escreve hoje é a ponte entre uma ideia
+                      abstrata e uma ferramenta que resolve problemas reais.
+                      Continue iterando.
+                    </p>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--simple" id="footer">
+      <div class="footer__section-container">
+        <div class="footer__menus">
+          <nav class="footer__section" aria-label="Navegação do Rodapé">
+            <h3 class="footer__section-title">NAVEGAÇÃO</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="sobre-retorno-home.html#"
+                  >Sobre</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <section class="footer__section">
+            <h3 class="footer__section-title">FERRAMENTAS</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="home.html#">Gerador SVG</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Painel Social</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer__section">
+            <h3 class="footer__section-title">CONTATO</h3>
+            <address class="footer__address">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://github.com/Junior010101/Paradolia"
+                    target="_blank"
+                    rel="author noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://www.linkedin.com/in/junior010101"
+                    target="_blank"
+                    rel="author noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="mailto:Paradolia.Shared@gmail.com"
+                    >E-Mail</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </section>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Paradôlia — Projeto Acadêmico | Web Coding
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
