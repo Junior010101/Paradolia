@@ -1,0 +1,368 @@
+<!doctype html>
+<!--
+                                                                     .-'''-.                        
+                                                   _______         '   _    \  .---.               
+_________   _...._                                 \  ___ `'.    /   /` '.   \ |   |.--.           
+\        |.'      '-.                               ' |--.\  \  .   |     \  ' |   ||__|           
+ \        .'```'.    '.          .-,.--.            | |    \  ' |   '      |  '|   |.--.           
+  \      |       \     \   __    |  .-. |    __     | |     |  '\    \     / / |   ||  |    __     
+   |     |        |    |.:--.'.  | |  | | .:--.'.   | |     |  | `.   ` ..' /  |   ||  | .:--.'.   
+   |      \      /    ./ |   \ | | |  | |/ |   \ |  | |     ' .'    '-...-'`   |   ||  |/ |   \ |  
+   |     |\`'-.-'   .' `" __ | | | |  '- `" __ | |  | |___.' /'                |   ||  |`" __ | |  
+   |     | '-....-'`    .'.''| | | |      .'.''| | /_______.'/                 |   ||__| .'.''| |  
+  .'     '.            / /   | |_| |     / /   | |_\_______|/                  '---'    / /   | |_ 
+'-----------'          \ \._,\ '/|_|     \ \._,\ '/                                     \ \._,\ '/ 
+                        `--'  `"          `--'  `"                                       `--'  `"   
+Desenvolvido por: Marcondes Paixão / github@junior010101
+Versão: 1.0.0 (2026)
+Contato: marcondesjunior2209@gmail.com
+------------------------------------------------
+"Algo que parece; é; mas não é"
+-->
+<html lang="pt-BR">
+  <head>
+    <!-- 
+    Aqui jaz o mockup padrão de uma página profissional em HTML Living Standard (HTML5)
+    (segundo a W3C: `https://validator.w3.org`) <^~^>/.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sobre – Paradôlia</title>
+    <meta
+      name="description"
+      content="Saiba mais sobre o Paradôlia: nosso propósito e valores. Entre em contato e acesse o suporte oficial do projeto."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://paradolia.vercel.app/sobre-retorno-index.html"
+    />
+    <meta name="theme-color" content="#fbc782" />
+
+    <!-- Open Graph meta tags -->
+    <!--
+    Essas tags servem para a incorporação do site em produção em redes sociais, exemplo:
+    manda o link do `https://www.youtube.com` no meu privado do whatsapp (`tava pensando em colocar
+    meu numero aqui entre parênteses mas lembrei que fica publico no github`), ele vai criar um card
+    com o og:site_name e og:title, YouTube, e uma breve descrição (og:description), e mais importante,
+    com um banner do seu site, sendo ele o og-card.png (og:image).
+     -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://paradolia.vercel.app/sobre-retorno-index.html"
+    />
+    <meta property="og:site_name" content="Paradôlia" />
+    <meta property="og:title" content="Sobre – Paradôlia" />
+    <meta
+      property="og:description"
+      content="Saiba mais sobre o Paradôlia: nosso propósito e valores. Entre em contato e acesse o suporte oficial do projeto."
+    />
+    <meta
+      property="og:image"
+      content="https://paradolia.vercel.app/og-card.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://paradolia.vercel.app/og-card.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- 
+    Meus icones (tem pra navegador lagado, pra atual, pra apple-touch e pra caso o navegador force
+    modo escuro, tipo o opera-gx) 
+    -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="favicon.webp" type="image/webp" sizes="48x48" />
+    <link rel="apple-touch-icon" href="favicon-180x180.png" sizes="180x180" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Aqui é a aba fontes e estilos -->
+    <link
+      rel="preload"
+      href="assets/fonts/Inter-VariableFont_opsz,wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Montserrat-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <link rel="stylesheet" href="./styles/components/layout.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/divider.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+
+    <link rel="stylesheet" href="./styles/pages/sobre/about-intro.css" />
+    <link rel="stylesheet" href="./styles/pages/sobre/contact.css" />
+  </head>
+  <body>
+    <header class="header header--start">
+      <a href="index.html" title="Voltar à página inicial">
+        <img
+          src="./assets/images/logotipo.svg"
+          alt="Logotipo do Paradôlia"
+          loading="eager"
+          fetchpriority="high"
+          width="156"
+          height="70"
+        />
+      </a>
+    </header>
+
+    <main class="main">
+      <section
+        class="section about-intro"
+        id="sobre"
+        aria-labelledby="sobre-titulo"
+      >
+        <div class="section__container about-intro__container">
+          <div class="about-intro__art" aria-hidden="true">
+            <img
+              src="./assets/images/ink-image.png"
+              alt=""
+              class="about-intro__art-image"
+              loading="eager"
+              fetchpriority="high"
+              width="580"
+              height="580"
+            />
+            <img
+              src="./assets/images/ink-vector.svg"
+              alt=""
+              class="about-intro__art-mask"
+              width="648"
+              height="605"
+            />
+          </div>
+          <h1 class="about-intro__title" id="sobre-titulo">Sobre</h1>
+
+          <hr class="divider divider--mobile-only" aria-hidden="true" />
+
+          <ul class="about-intro__list">
+            <li class="about-intro__item">
+              <div class="about-intro__badge" aria-hidden="true">
+                <img
+                  src="./assets/icons/pin-icon.svg"
+                  alt=""
+                  class="about-intro__badge-icon"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="about-intro__text">
+                <h2 class="about-intro__item-title">Proposito</h2>
+                <p class="about-intro__item-description">
+                  Reunir as grandes mentes por trás da criatividade no meio
+                  digital.
+                </p>
+              </div>
+            </li>
+            <li class="about-intro__item about-intro__item--offset">
+              <div class="about-intro__badge" aria-hidden="true">
+                <img
+                  src="./assets/icons/gold-icon.svg"
+                  alt=""
+                  class="about-intro__badge-icon"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="about-intro__text">
+                <h2 class="about-intro__item-title">Valores</h2>
+                <p class="about-intro__item-description">
+                  Compartilhar, comentar e costurar novos formatos de se
+                  expressar na internet.
+                </p>
+              </div>
+            </li>
+            <li class="about-intro__item">
+              <div class="about-intro__badge" aria-hidden="true">
+                <img
+                  src="./assets/icons/photo-icon.svg"
+                  alt=""
+                  class="about-intro__badge-icon"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="about-intro__text">
+                <h2 class="about-intro__item-title">Nosso jeito</h2>
+                <p class="about-intro__item-description">
+                  “Nós ouvimos, mas não julgamos”, mesmo assim há limites em
+                  conteudo postado e moderação nos comentarios viu!!! ;3
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="section section__container">
+        <hr class="divider" aria-hidden="true" />
+      </div>
+      <section
+        class="section contact"
+        id="contato"
+        aria-labelledby="contato-titulo"
+      >
+        <div class="contact__container">
+          <div class="contact__info">
+            <h2 class="contact__group-title" id="contato-titulo">
+              Recebimento de midia:
+            </h2>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a
+                  href="mailto:Paradolia.Shared@gmail.com"
+                  class="contact__link"
+                >
+                  <img
+                    src="./assets/icons/mail-icon.svg"
+                    alt=""
+                    class="contact__icon"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  />
+                  <span class="contact__link-text"
+                    >Paradolia.Shared@gmail.com</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <h2 class="contact__group-title">Social:</h2>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a
+                  href="https://instagram.com/marcondes_j08"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                >
+                  <img
+                    src="./assets/icons/half-whatsapp-and-instagram-icon.svg"
+                    alt=""
+                    class="contact__icon"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  />
+                  <span class="contact__link-text">@marcondes_j08</span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a
+                  href="https://www.linkedin.com/in/junior010101"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                >
+                  <img
+                    src="./assets/icons/linkedin-icon.svg"
+                    alt=""
+                    class="contact__icon"
+                    aria-hidden="true"
+                    width="32"
+                    height="32"
+                  />
+                  <span class="contact__link-text">/in/junior010101</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./assets/images/mascote-deitado.svg"
+            alt="Mascote Paradôlia relaxando"
+            class="contact__mascot"
+            loading="lazy"
+            width="80%"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--simple" id="footer">
+      <div class="footer__section-container">
+        <div class="footer__menus">
+          <nav class="footer__section" aria-label="Navegação do Rodapé">
+            <h3 class="footer__section-title">NAVEGAÇÃO</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="sobre-retorno-index.html#"
+                  >Sobre</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="sobre-retorno-index.html#contato"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <section class="footer__section">
+            <h3 class="footer__section-title">FERRAMENTAS</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Gerador SVG</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Painel Social</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer__section">
+            <h3 class="footer__section-title">CONTATO</h3>
+            <address class="footer__address">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://github.com/Junior010101/Paradolia"
+                    rel="author"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://www.linkedin.com/in/junior010101"
+                    rel="author"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="mailto:Paradolia.Shared@gmail.com"
+                    >E-Mail</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </section>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Paradôlia — Projeto Acadêmico | Web Coding
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

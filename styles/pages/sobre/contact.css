@@ -1,0 +1,112 @@
+/* 
+ * Estrutura BEM (Block, Element, Modifier) aplicada ao CSS:
+ * - Usar classes CSS para toda e qualquer estilização.
+ * - Usar block__element para elementos filhos do componente principal.
+ * - Usar block--modifier (ou block__element--modifier) para variações. 
+ */
+/* Block */
+.contact {
+  width: 100%;
+}
+
+/* Element */
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+}
+
+.contact__group-title {
+  font-family: var(--font-titles);
+  font-size: var(--fs-h4);
+  font-weight: 700;
+  color: var(--cinza-secundario);
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--laranja-primario);
+  font-weight: 500;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact__link:hover,
+.contact__link:focus-visible {
+  opacity: 0.8;
+  transform: translateX(4px);
+}
+
+.contact__icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.contact__link-text {
+  font-size: var(--fs-body);
+}
+
+.contact__illustration {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact__mascot {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Modifiers */
+
+/* Media Queries */
+@media (min-width: 820px) {
+  .contact__container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+  }
+
+  .contact__illustration {
+    width: 100%;
+  }
+
+  .contact__mascot {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+}
+
+/* Id */
+#contato {
+  scroll-margin-top: 100px;
+}

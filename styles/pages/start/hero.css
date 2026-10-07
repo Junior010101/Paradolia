@@ -82,6 +82,7 @@
   .hero__vector {
     min-height: 100px;
     object-fit: cover;
+    bottom: -0.1vh;
   }
   .hero__content {
     align-items: center;

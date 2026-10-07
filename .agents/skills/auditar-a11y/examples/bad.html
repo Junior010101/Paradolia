@@ -1,0 +1,28 @@
+<!-- Exemplo de Código com Violações Graves de Acessibilidade (ANTI-PADRÃO) -->
+<div class="header">
+  <!-- ERRO 1: Falta de tag <header> e falta de texto acessível no link da logo -->
+  <a href="/">
+    <img src="logotipo.svg"> <!-- ERRO 2: Falta de atributo alt e dimensões -->
+  </a>
+</div>
+
+<div class="content">
+  <!-- ERRO 3: Pular níveis de cabeçalho e ausência de tag <main> -->
+  <h3>Sobre nós</h3> <!-- Deveria ser <h1> ou <h2> -->
+
+  <div class="item">
+    <!-- ERRO 4: Ícone decorativo sem aria-hidden com alt genérico lido pelo screen reader -->
+    <img src="pin.svg" alt="ícone de pino vermelho">
+    <h4>Nosso Propósito</h4>
+    <!-- ERRO 5: Contraste insuficiente (#ccc em fundo branco) -->
+    <p style="color: #cccccc;">Criar novas formas visuais.</p>
+  </div>
+
+  <!-- ERRO 6: Botão simulado via div sem teclado e sem acessibilidade -->
+  <div class="btn" onclick="goToContact()">
+    Fale Conosco
+  </div>
+
+  <!-- ERRO 7: Link ambíguo sem contexto de destino -->
+  <a href="/detalhes">Clique aqui</a>
+</div>

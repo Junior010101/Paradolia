@@ -1,0 +1,35 @@
+/* 
+ * Template Boilerplate BEM para Novos Componentes — Paradôlia
+ * Regras:
+ * - 1 Bloco por arquivo
+ * - Mantenha as 4 seções na ordem indicada
+ * - Não adicione comentários supérfluos dentro das regras
+ */
+
+/* Block */
+.nome-do-bloco {
+  display: flex;
+  width: 100%;
+}
+
+/* Element */
+.nome-do-bloco__elemento {
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+/* Modifiers */
+.nome-do-bloco--variacao {
+  background-color: var(--laranja-primario);
+}
+
+.nome-do-bloco__elemento--destaque {
+  color: var(--laranja-avermelhado-primario);
+}
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .nome-do-bloco {
+    flex-direction: column;
+  }
+}

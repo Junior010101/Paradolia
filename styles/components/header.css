@@ -55,7 +55,7 @@
   .header {
     padding-inline: 20px;
   }
-  .header--start {
+  .header--start:has(.header__nav) {
     justify-content: space-between;
   }
   .header__nav {

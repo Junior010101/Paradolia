@@ -102,6 +102,17 @@
   gap: 8px;
 }
 
+/* Modifiers */
+.footer--simple {
+  padding-block: 60px 30px;
+  margin-top: 60px;
+}
+
+.footer--simple .footer__section-container {
+  justify-content: flex-start;
+}
+
+/* Media Queries */
 @media (max-width: 820px) {
   .footer {
     padding-inline: 20px;
@@ -111,11 +122,11 @@
     align-items: end;
     gap: 20px;
   }
+  .footer--simple {
+    padding-block: 40px 24px;
+    margin-top: 40px;
+  }
+  .footer--simple .footer__bottom {
+    align-items: center;
+  }
 }
-
-/* Modifiers */
-/* .footer--start {
-}
-
-.footer--home {
-} */

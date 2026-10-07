@@ -1,0 +1,42 @@
+/* Exemplo de CSS Desorganizado e com Anti-padrões (ANTI-PADRÃO) */
+
+/* ERRO 1: Falta da estrutura de seções BEM (Block, Element, Modifiers, Media Queries) */
+/* ERRO 2: Seletor de tag pura no arquivo do componente */
+nav {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* ERRO 3: Seletores descendentes profundos e alta especificidade */
+nav ul li a {
+  color: #8e8e8e;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ERRO 4: Redundância total de propriedades no estado hover (repetindo display, font, etc) */
+nav ul li a:hover {
+  display: flex; /* REDUNDANTE */
+  align-items: center; /* REDUNDANTE */
+  gap: 10px; /* REDUNDANTE */
+  font-family: "Inter", sans-serif; /* REDUNDANTE */
+  font-size: 16px; /* REDUNDANTE */
+  color: #e45a35; /* Única propriedade que realmente muda */
+}
+
+/* ERRO 5: Classes não padronizadas e mistura de múltiplos blocos */
+.btn-primary {
+  background-color: #f76205;
+  color: #ffffff;
+}
+
+/* ERRO 6: Media query solta no meio do arquivo com breakpoint arbitrário */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

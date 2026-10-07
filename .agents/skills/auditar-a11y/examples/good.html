@@ -1,0 +1,49 @@
+<!-- Exemplo Refatorado com Acessibilidade e Semântica Rigorosa (BOAS PRÁTICAS) -->
+<header class="header">
+  <!-- CORREÇÃO 1: Marco <header> nativo e link com rótulo claro e acessível -->
+  <a href="index.html" class="header__link-home" aria-label="Voltar para a página inicial do Paradôlia">
+    <img
+      src="assets/images/logotipo.svg"
+      alt="Logotipo do Paradôlia"
+      width="156"
+      height="70"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </a>
+</header>
+
+<main class="main">
+  <!-- CORREÇÃO 2: Marco <main> e hierarquia de títulos iniciando com <h1> -->
+  <section class="section about-intro" aria-labelledby="about-title">
+    <div class="section__container">
+      <h1 id="about-title" class="about-intro__title">Sobre nós</h1>
+
+      <ul class="about-intro__list">
+        <li class="about-intro__item">
+          <!-- CORREÇÃO 3: Ícone decorativo ignorado por screen reader com aria-hidden -->
+          <div class="about-intro__badge" aria-hidden="true">
+            <img src="assets/icons/pin-icon.svg" alt="" width="32" height="32" />
+          </div>
+          <div class="about-intro__text">
+            <h2 class="about-intro__item-title">Nosso Propósito</h2>
+            <!-- CORREÇÃO 4: Cor com alto contraste conforme WCAG AA (mínimo 4.5:1) -->
+            <p class="about-intro__item-description">
+              Reunir as grandes mentes por trás da criatividade no meio digital.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- CORREÇÃO 5: Elemento interativo usando <a> semântico com destino claro -->
+      <a href="sobre-retorno-index.html#contato" class="button button--primary">
+        Fale Conosco
+      </a>
+
+      <!-- CORREÇÃO 6: Texto de link descritivo e autoexplicativo -->
+      <a href="docs/detalhes.html" class="about-intro__link">
+        Conheça os detalhes do projeto Paradôlia
+      </a>
+    </div>
+  </section>
+</main>

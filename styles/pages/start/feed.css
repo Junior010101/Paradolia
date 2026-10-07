@@ -35,14 +35,10 @@
 }
 
 .feed__list::-webkit-scrollbar-thumb {
-  background-color: var(--laranja-secundario);
+  background-color: var(--laranja-avermelhado-primario);
   border-radius: 50px;
   border: 8px solid var(--preto-primario);
   background-clip: padding-box;
-}
-
-.feed__list::-webkit-scrollbar-thumb:hover {
-  background-color: var(--laranja-avermelhado-primario);
 }
 
 .feed__slider-wrapper {
@@ -55,7 +51,7 @@
   position: absolute;
   top: 0;
   bottom: 56px;
-  width: 80px;
+  width: 20px;
   z-index: 10;
   pointer-events: none;
 }

@@ -67,7 +67,6 @@ Contato: marcondesjunior2209@gmail.com
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <!-- Open Graph meta tags -->
 
     <!-- 
     Meus icones (tem pra navegador lagado, pra atual, pra apple-touch e pra caso o navegador force
@@ -99,11 +98,11 @@ Contato: marcondesjunior2209@gmail.com
     <link rel="stylesheet" href="./styles/styles.css" />
 
     <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/layout.css" />
     <link rel="stylesheet" href="./styles/components/pagemap.css" />
     <link rel="stylesheet" href="./styles/components/button.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
 
-    <link rel="stylesheet" href="./styles/pages/start/layout.css" />
     <link rel="stylesheet" href="./styles/pages/start/hero.css" />
     <link rel="stylesheet" href="./styles/pages/start/about.css" />
     <link rel="stylesheet" href="./styles/pages/start/feed.css" />
@@ -335,7 +334,6 @@ Contato: marcondesjunior2209@gmail.com
           </h3>
         </hgroup>
       </div>
-
       <div class="footer__section-container">
         <img
           src="./assets/images/logomarca.svg"
@@ -345,9 +343,8 @@ Contato: marcondesjunior2209@gmail.com
           loading="eager"
           fetchpriority="high"
         />
-
         <div class="footer__menus">
-          <section class="footer__section">
+          <nav class="footer__section" aria-label="Navegação do Rodapé">
             <h3 class="footer__section-title">NAVEGAÇÃO</h3>
             <ul class="footer__list">
               <li class="footer__item">
@@ -357,10 +354,12 @@ Contato: marcondesjunior2209@gmail.com
                 <a class="footer__link" href="#feed">Feed</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Sobre</a>
+                <a class="footer__link" href="sobre-retorno-index.html"
+                  >Sobre</a
+                >
               </li>
             </ul>
-          </section>
+          </nav>
           <section class="footer__section">
             <h3 class="footer__section-title">FERRAMENTAS</h3>
             <ul class="footer__list">
@@ -374,27 +373,42 @@ Contato: marcondesjunior2209@gmail.com
           </section>
           <section class="footer__section">
             <h3 class="footer__section-title">CONTATO</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link" href="#">GitHub</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">LinkedIn</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">E-Mail</a>
-              </li>
-            </ul>
+            <address class="footer__address">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://github.com/Junior010101/Paradolia"
+                    rel="author"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://www.linkedin.com/in/junior010101"
+                    rel="author"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="mailto:Paradolia.Shared@gmail.com"
+                    >E-Mail</a
+                  >
+                </li>
+              </ul>
+            </address>
           </section>
         </div>
       </div>
-
       <div class="footer__bottom">
         <p class="footer__copyright">
           © 2026 Paradôlia — Projeto Acadêmico | Web Coding
         </p>
         <a href="#" class="button footer__button"
-          ><span>
+          ><span aria-hidden="true">
             <svg
               width="20"
               height="25"
