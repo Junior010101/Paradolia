@@ -53,6 +53,7 @@
 
 .footer__mascot {
   object-fit: contain;
+  width: 40%;
 }
 
 .footer__menus {
