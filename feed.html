@@ -28,13 +28,13 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Paradôlia – Inspiração e Entropia Visual</title>
+    <title>Feed da Comunidade – Paradôlia</title>
     <meta
       name="description"
-      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia, encontre novos padrões e compartilhe suas interpretações na comunidade."
+      content="Conecte-se com outros criativos, descubra novas referências e compartilhe a sua arte com a comunidade."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://paradolia.vercel.app/home.html" />
+    <link rel="canonical" href="https://paradolia.vercel.app/feed.html" />
     <meta name="theme-color" content="#e45a35" />
 
     <!-- Open Graph meta tags -->
@@ -46,15 +46,12 @@
     com um banner do seu site, sendo ele o og-card.png (og:image).
      -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://paradolia.vercel.app/home.html" />
+    <meta property="og:url" content="https://paradolia.vercel.app/feed.html" />
     <meta property="og:site_name" content="Paradôlia" />
-    <meta
-      property="og:title"
-      content="Paradôlia — Inspiração e Entropia Visual"
-    />
+    <meta property="og:title" content="Feed da Comunidade – Paradôlia" />
     <meta
       property="og:description"
-      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia e compartilhe suas interpretações."
+      content="Conecte-se com outros criativos, descubra novas referências e compartilhe a sua arte com a comunidade."
     />
     <meta
       property="og:image"
@@ -103,9 +100,9 @@
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
 
-    <link rel="stylesheet" href="./styles/pages/home/home-layout.css" />
-    <link rel="stylesheet" href="./styles/pages/home/generator.css" />
-    <link rel="stylesheet" href="./styles/pages/home/motivational-feed.css" />
+    <link rel="stylesheet" href="./styles/pages/feed/feed-layout.css" />
+    <link rel="stylesheet" href="./styles/pages/feed/feed-posts.css" />
+    <link rel="stylesheet" href="./styles/pages/feed/feed-actions.css" />
   </head>
   <body>
     <header class="header header--home">
@@ -124,7 +121,15 @@
         </button>
         <span class="header__brand-title">Paradôlia</span>
       </div>
-      <button class="button header__login-button">Iniciar sessão</button>
+      <img
+        src="./assets/images/fitgirl-perfil.png"
+        alt="Foto de perfil do usuário"
+        class="header__user-avatar"
+        width="180"
+        height="60"
+        loading="eager"
+        fetchpriority="high"
+      />
     </header>
     <aside id="sidebar-menu" popover class="sidebar">
       <div class="sidebar__header">
@@ -168,120 +173,133 @@
       </nav>
     </aside>
     <main class="main">
-      <section class="section" aria-label="Gerador e Mensagens">
+      <section class="section" aria-label="Feed da Comunidade">
         <div class="section__container">
-          <h1 class="visually-hidden">
-            Paradôlia — Gerador de Entropia Visual e Inspiração
-          </h1>
-          <div class="home-layout">
-            <div class="home-layout__column">
-              <section class="generator">
-                <h2 class="generator__badge">Você consegue!</h2>
-                <div class="generator__canvas">
-                  <img
-                    src="./assets/images/svg-gerado.png"
-                    alt="Padrão abstrato gerado com linhas coloridas entrelaçadas"
-                    class="generator__image"
-                    width="700"
-                    height="440"
-                    loading="eager"
-                    fetchpriority="high"
-                  />
+          <h1 class="visually-hidden">Feed da Comunidade — Paradôlia</h1>
+          <div class="feed-layout">
+            <div class="feed-layout__posts">
+              <div class="feed-posts">
+                <div class="feed-posts__filters">
+                  <select class="feed-posts__filter" aria-label="Ordenar por">
+                    <option value="recente">Recente</option>
+                    <option value="antigo">Mais antigo</option>
+                  </select>
+                  <select
+                    class="feed-posts__filter"
+                    aria-label="Filtrar por categoria"
+                  >
+                    <option value="arte">Arte</option>
+                    <option value="design">Design</option>
+                    <option value="fotografia">Fotografia</option>
+                  </select>
                 </div>
-                <button type="button" class="button generator__button">
+                <div class="feed-posts__list">
+                  <article class="post-card">
+                    <img
+                      src="./assets/images/card-do-feed-1.png"
+                      alt="Ilustração de anime com personagem de cabelos azuis etéreos contra fundo bege"
+                      class="post-card__image"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    />
+                    <div class="post-card__overlay">
+                      <h2 class="post-card__title">
+                        Quando a Arte Ultrapassa os Limites da Tela.
+                      </h2>
+                      <p class="post-card__description">
+                        Já parou para reparar nos mínimos detalhes daquela cena
+                        de anime que te deixou sem palavras? Mais do que simples
+                        desenhos...
+                      </p>
+                      <time class="post-card__date" datetime="2026-10-01"
+                        >01/10/2026</time
+                      >
+                    </div>
+                  </article>
+                  <article class="post-card">
+                    <img
+                      src="./assets/images/card-do-feed-2.png"
+                      alt="Paisagem noturna com casa isolada, lua cheia alaranjada e árvores sem folhas"
+                      class="post-card__image"
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                    />
+                    <div class="post-card__overlay">
+                      <h2 class="post-card__title">
+                        A Solidão que Inspira o Traço Perfeito.
+                      </h2>
+                      <p class="post-card__description">
+                        Às vezes o silêncio é o melhor companheiro de criação.
+                        Uma paleta fria, uma lua imensa e a liberdade de criar
+                        sem julgamentos...
+                      </p>
+                      <time class="post-card__date" datetime="2026-09-28"
+                        >28/09/2026</time
+                      >
+                    </div>
+                  </article>
+                  <a class="post-card__link" href="post-body.html">
+                    <article class="post-card">
+                      <img
+                        src="./assets/images/card-do-feed-3.png"
+                        alt="Composição abstrata com manchas de tinta coloridas sobre fundo escuro"
+                        class="post-card__image"
+                        width="640"
+                        height="400"
+                        loading="lazy"
+                      />
+                      <div class="post-card__overlay">
+                        <h2 class="post-card__title">
+                          Entropia e Cor: Deixe o Acidente Guiar a Obra.
+                        </h2>
+                        <p class="post-card__description">
+                          Nem toda obra nasce de um plano. Algumas das criações
+                          mais marcantes surgem do caos, do erro transformado em
+                          intenção...
+                        </p>
+                        <time class="post-card__date" datetime="2026-09-15"
+                          >15/09/2026</time
+                        >
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="feed-layout__actions">
+              <div class="feed-actions">
+                <button
+                  type="button"
+                  class="button feed-actions__button feed-actions__button--primary"
+                >
                   <img
-                    src="./assets/icons/dice-icon.svg"
+                    src="./assets/icons/add-icon.svg"
                     alt=""
-                    class="generator__button-icon"
+                    class="feed-actions__button-icon"
                     aria-hidden="true"
                     width="20"
-                    height="25"
+                    height="20"
                   />
-                  <span class="generator__button-text">Gerar novo padrão</span>
+                  Novo post
                 </button>
-              </section>
-            </div>
-            <div class="home-layout__column">
-              <section class="motivational-feed">
-                <header class="motivational-feed__header">
-                  <select class="motivational-feed__section-title">
-                    <option
-                      class="motivational-feed__section"
-                      value="mensagens motivacionais"
-                    >
-                      Mensagens motivacionais
-                    </option>
-                  </select>
-                </header>
-                <div class="motivational-feed__list">
-                  <article class="motivational-feed__card">
-                    <header class="motivational-feed__card-header">
-                      <img
-                        src="./assets/images/paradolia-perfil.png"
-                        alt=""
-                        class="motivational-feed__card-avatar"
-                        aria-hidden="true"
-                        width="36"
-                        height="36"
-                      />
-                      <div class="motivational-feed__card-author-info">
-                        <span class="motivational-feed__card-author"
-                          >Paradôlia</span
-                        >
-                        <span class="motivational-feed__card-category"
-                          >Inspiração</span
-                        >
-                      </div>
-                    </header>
-                    <h3 class="motivational-feed__card-quote">
-                      Sua arte não precisa agradar a todo mundo para ter valor;
-                      ela precisa apenas ser verdadeira.
-                    </h3>
-                    <hr
-                      class="motivational-feed__card-divider"
-                      aria-hidden="true"
-                    />
-                    <p class="motivational-feed__card-body">
-                      Acredite no seu olhar e permita que sua criação floresça
-                      sem a necessidade de aprovação.
-                    </p>
-                  </article>
-                  <article class="motivational-feed__card">
-                    <header class="motivational-feed__card-header">
-                      <img
-                        src="./assets/images/paradolia-perfil.png"
-                        alt=""
-                        class="motivational-feed__card-avatar"
-                        aria-hidden="true"
-                        width="36"
-                        height="36"
-                      />
-                      <div class="motivational-feed__card-author-info">
-                        <span class="motivational-feed__card-author"
-                          >Paradôlia</span
-                        >
-                        <span class="motivational-feed__card-category"
-                          >Inspiração</span
-                        >
-                      </div>
-                    </header>
-                    <h3 class="motivational-feed__card-quote">
-                      Projetar não é apenas sobre pixels bonitos ou formas
-                      perfeitas, mas sobre resolver a dor de alguém de forma
-                      invisível e elegante.
-                    </h3>
-                    <hr
-                      class="motivational-feed__card-divider"
-                      aria-hidden="true"
-                    />
-                    <p class="motivational-feed__card-body">
-                      O código que você escreve hoje é a ponte entre uma ideia
-                      abstrata e uma ferramenta que resolve problemas reais.
-                      Continue iterando.
-                    </p>
-                  </article>
-                </div>
-              </section>
+                <button
+                  type="button"
+                  class="button feed-actions__button feed-actions__button--secondary"
+                >
+                  <img
+                    src="./assets/icons/statistycs.svg"
+                    alt=""
+                    class="feed-actions__button-icon"
+                    aria-hidden="true"
+                    width="20"
+                    height="20"
+                  />
+                  Seus posts
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -294,7 +312,9 @@
             <h3 class="footer__section-title">NAVEGAÇÃO</h3>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="sobre-retorno-home.html">Sobre</a>
+                <a class="footer__link" href="sobre-retorno-home.html#"
+                  >Sobre</a
+                >
               </li>
             </ul>
           </nav>
@@ -302,10 +322,10 @@
             <h3 class="footer__section-title">FERRAMENTAS</h3>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="home.html#">Gerador SVG</a>
+                <a class="footer__link" href="home.html">Gerador SVG</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="feed.html">Painel Social</a>
+                <a class="footer__link" href="feed.html#">Painel Social</a>
               </li>
             </ul>
           </section>

@@ -28,14 +28,14 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Paradôlia – Inspiração e Entropia Visual</title>
+    <title>O que você vai descobrir hoje. – Paradôlia</title>
     <meta
       name="description"
-      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia, encontre novos padrões e compartilhe suas interpretações na comunidade."
+      content="A verdadeira arte não é apenas aquela que admiramos de longe, mas a que consegue mexer com a gente por dentro, transformando nossa maneira de sentir e ver o mundo."
     />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://paradolia.vercel.app/home.html" />
-    <meta name="theme-color" content="#e45a35" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://paradolia.vercel.app/post-body.html" />
+    <meta name="theme-color" content="#222222" />
 
     <!-- Open Graph meta tags -->
     <!--
@@ -46,15 +46,18 @@
     com um banner do seu site, sendo ele o og-card.png (og:image).
      -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://paradolia.vercel.app/home.html" />
+    <meta
+      property="og:url"
+      content="https://paradolia.vercel.app/post-body.html"
+    />
     <meta property="og:site_name" content="Paradôlia" />
     <meta
       property="og:title"
-      content="Paradôlia — Inspiração e Entropia Visual"
+      content="O que você vai descobrir hoje. – Paradôlia"
     />
     <meta
       property="og:description"
-      content="Destrave seu potencial criativo! Use o gerador de formas aleatórias do Paradôlia e compartilhe suas interpretações."
+      content="A verdadeira arte não é apenas aquela que admiramos de longe, mas a que consegue mexer com a gente por dentro, transformando nossa maneira de sentir e ver o mundo."
     />
     <meta
       property="og:image"
@@ -103,9 +106,9 @@
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
 
-    <link rel="stylesheet" href="./styles/pages/home/home-layout.css" />
-    <link rel="stylesheet" href="./styles/pages/home/generator.css" />
-    <link rel="stylesheet" href="./styles/pages/home/motivational-feed.css" />
+    <link rel="stylesheet" href="./styles/pages/post/post-layout.css" />
+    <link rel="stylesheet" href="./styles/pages/post/post-content.css" />
+    <link rel="stylesheet" href="./styles/pages/post/post-comments.css" />
   </head>
   <body>
     <header class="header header--home">
@@ -124,7 +127,15 @@
         </button>
         <span class="header__brand-title">Paradôlia</span>
       </div>
-      <button class="button header__login-button">Iniciar sessão</button>
+      <img
+        src="./assets/images/fitgirl-perfil.png"
+        alt="Foto de perfil do usuário"
+        class="header__user-avatar"
+        width="180"
+        height="60"
+        loading="eager"
+        fetchpriority="high"
+      />
     </header>
     <aside id="sidebar-menu" popover class="sidebar">
       <div class="sidebar__header">
@@ -168,119 +179,196 @@
       </nav>
     </aside>
     <main class="main">
-      <section class="section" aria-label="Gerador e Mensagens">
+      <section class="section" aria-label="Corpo do Post">
         <div class="section__container">
-          <h1 class="visually-hidden">
-            Paradôlia — Gerador de Entropia Visual e Inspiração
-          </h1>
-          <div class="home-layout">
-            <div class="home-layout__column">
-              <section class="generator">
-                <h2 class="generator__badge">Você consegue!</h2>
-                <div class="generator__canvas">
+          <div class="post-layout">
+            <div class="post-layout__back">
+              <a
+                href="feed.html"
+                class="button post-back-button"
+                aria-label="Voltar ao feed"
+              >
+                <img
+                  src="./assets/icons/seta-icon.svg"
+                  alt=""
+                  class="post-back-button__icon"
+                  aria-hidden="true"
+                  width="20"
+                  height="20"
+                />
+                Voltar
+              </a>
+            </div>
+
+            <div class="post-layout__content">
+              <article class="post-content">
+                <div class="post-content__author">
                   <img
-                    src="./assets/images/svg-gerado.png"
-                    alt="Padrão abstrato gerado com linhas coloridas entrelaçadas"
-                    class="generator__image"
-                    width="700"
-                    height="440"
+                    src="./assets/images/fitgirl-perfil.png"
+                    alt="Avatar de FitGirl67_Brasiliana_nata"
+                    class="post-content__author-avatar"
+                    width="64"
+                    height="64"
                     loading="eager"
                     fetchpriority="high"
                   />
+                  <span class="post-content__author-name"
+                    >FitGirl67_Brasiliana_nata</span
+                  >
                 </div>
-                <button type="button" class="button generator__button">
-                  <img
-                    src="./assets/icons/dice-icon.svg"
-                    alt=""
-                    class="generator__button-icon"
+                <div class="post-content__heading">
+                  <h1 class="post-content__title">
+                    O que você vai descobrir hoje.
+                  </h1>
+                  <span
+                    class="post-content__title-underline"
                     aria-hidden="true"
-                    width="20"
-                    height="25"
-                  />
-                  <span class="generator__button-text">Gerar novo padrão</span>
-                </button>
-              </section>
-            </div>
-            <div class="home-layout__column">
-              <section class="motivational-feed">
-                <header class="motivational-feed__header">
-                  <select class="motivational-feed__section-title">
-                    <option
-                      class="motivational-feed__section"
-                      value="mensagens motivacionais"
-                    >
-                      Mensagens motivacionais
-                    </option>
-                  </select>
-                </header>
-                <div class="motivational-feed__list">
-                  <article class="motivational-feed__card">
-                    <header class="motivational-feed__card-header">
-                      <img
-                        src="./assets/images/paradolia-perfil.png"
-                        alt=""
-                        class="motivational-feed__card-avatar"
-                        aria-hidden="true"
-                        width="36"
-                        height="36"
-                      />
-                      <div class="motivational-feed__card-author-info">
-                        <span class="motivational-feed__card-author"
-                          >Paradôlia</span
-                        >
-                        <span class="motivational-feed__card-category"
-                          >Inspiração</span
-                        >
-                      </div>
-                    </header>
-                    <h3 class="motivational-feed__card-quote">
-                      Sua arte não precisa agradar a todo mundo para ter valor;
-                      ela precisa apenas ser verdadeira.
-                    </h3>
-                    <hr
-                      class="motivational-feed__card-divider"
-                      aria-hidden="true"
-                    />
-                    <p class="motivational-feed__card-body">
-                      Acredite no seu olhar e permita que sua criação floresça
-                      sem a necessidade de aprovação.
-                    </p>
-                  </article>
-                  <article class="motivational-feed__card">
-                    <header class="motivational-feed__card-header">
-                      <img
-                        src="./assets/images/paradolia-perfil.png"
-                        alt=""
-                        class="motivational-feed__card-avatar"
-                        aria-hidden="true"
-                        width="36"
-                        height="36"
-                      />
-                      <div class="motivational-feed__card-author-info">
-                        <span class="motivational-feed__card-author"
-                          >Paradôlia</span
-                        >
-                        <span class="motivational-feed__card-category"
-                          >Inspiração</span
-                        >
-                      </div>
-                    </header>
-                    <h3 class="motivational-feed__card-quote">
-                      Projetar não é apenas sobre pixels bonitos ou formas
-                      perfeitas, mas sobre resolver a dor de alguém de forma
-                      invisível e elegante.
-                    </h3>
-                    <hr
-                      class="motivational-feed__card-divider"
-                      aria-hidden="true"
-                    />
-                    <p class="motivational-feed__card-body">
-                      O código que você escreve hoje é a ponte entre uma ideia
-                      abstrata e uma ferramenta que resolve problemas reais.
-                      Continue iterando.
-                    </p>
-                  </article>
+                  ></span>
                 </div>
+                <div
+                  class="post-content__gallery"
+                  aria-label="Galeria de imagens do post"
+                >
+                  <span class="post-content__gallery-counter">1 / 2</span>
+                  <div class="post-content__carousel">
+                    <div
+                      class="post-content__slides"
+                      role="list"
+                      aria-label="Imagens do post"
+                    >
+                      <div
+                        class="post-content__slide"
+                        id="slide-1"
+                        role="listitem"
+                      >
+                        <img
+                          src="./assets/images/card-do-feed-3.png"
+                          alt="Ilustração de anime com personagem de cabelos azuis etéreos contra fundo bege"
+                          class="post-content__slide-image"
+                          width="640"
+                          height="380"
+                          loading="eager"
+                          fetchpriority="high"
+                        />
+                      </div>
+                      <div
+                        class="post-content__slide"
+                        id="slide-2"
+                        role="listitem"
+                      >
+                        <img
+                          src="./assets/images/card-do-feed-3-2.png"
+                          alt="Paisagem noturna com casa isolada, lua cheia alaranjada e árvores sem folhas"
+                          class="post-content__slide-image"
+                          width="640"
+                          height="380"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <a
+                      href="#slide-1"
+                      class="button post-content__carousel-btn post-content__carousel-btn--prev"
+                      aria-label="Imagem anterior"
+                    >
+                      <img
+                        src="./assets/icons/seta-laranja-icon.svg"
+                        alt=""
+                        class="post-content__carousel-btn-icon"
+                        aria-hidden="true"
+                        width="20"
+                        height="20"
+                      />
+                    </a>
+                    <a
+                      href="#slide-2"
+                      class="button post-content__carousel-btn post-content__carousel-btn--next"
+                      aria-label="Próxima imagem"
+                    >
+                      <img
+                        src="./assets/icons/seta-laranja-icon.svg"
+                        alt=""
+                        class="post-content__carousel-btn-icon"
+                        aria-hidden="true"
+                        width="20"
+                        height="20"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <p class="post-content__caption">
+                  A verdadeira arte não é apenas aquela que admiramos de longe,
+                  mas a que consegue mexer com a gente por dentro, transformando
+                  nossa maneira de sentir e ver o mundo.
+                </p>
+              </article>
+            </div>
+
+            <div class="post-layout__comments">
+              <section class="post-comments" aria-label="Comentários do post">
+                <ul class="post-comments__list">
+                  <li class="post-comments__item">
+                    <img
+                      src="./assets/images/paradolia-perfil.png"
+                      alt="Avatar de LunaMoon"
+                      class="post-comments__avatar"
+                      width="64"
+                      height="64"
+                      loading="lazy"
+                    />
+                    <span class="post-comments__username">LunaMoon</span>
+                    <time class="post-comments__time" datetime="PT2H">2h</time>
+                    <p class="post-comments__text">
+                      Amei demais esse post! Você sempre traz tanta energia
+                      positiva para a comunidade.
+                    </p>
+                  </li>
+                  <li class="post-comments__item">
+                    <img
+                      src="./assets/images/card-do-feed-2.png"
+                      alt="Avatar de Kairos_Gamer"
+                      class="post-comments__avatar"
+                      width="64"
+                      height="64"
+                      loading="lazy"
+                    />
+                    <span class="post-comments__username">Kairos_Gamer</span>
+                    <time class="post-comments__time" datetime="PT5H">5h</time>
+                    <p class="post-comments__text">Você é a melhor!</p>
+                  </li>
+                  <li class="post-comments__item">
+                    <img
+                      src="./assets/images/card-do-feed-3.png"
+                      alt="Avatar de NekoChan_99"
+                      class="post-comments__avatar"
+                      width="64"
+                      height="64"
+                      loading="lazy"
+                    />
+                    <span class="post-comments__username">NekoChan_99</span>
+                    <time class="post-comments__time" datetime="P1D">1d</time>
+                    <p class="post-comments__text">
+                      Sua energia é contagiante! Sempre me sinto mais motivada
+                      depois de ver seus posts.
+                    </p>
+                  </li>
+                </ul>
+                <form
+                  class="post-comments__form"
+                  action="#"
+                  aria-label="Adicionar comentário"
+                >
+                  <input
+                    class="post-comments__input"
+                    type="text"
+                    name="comentario"
+                    placeholder="Comente aqui!"
+                    aria-label="Escreva seu comentário"
+                  />
+                  <button type="button" class="button post-comments__submit">
+                    Enviar
+                  </button>
+                </form>
               </section>
             </div>
           </div>
@@ -294,7 +382,9 @@
             <h3 class="footer__section-title">NAVEGAÇÃO</h3>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="sobre-retorno-home.html">Sobre</a>
+                <a class="footer__link" href="sobre-retorno-home.html#"
+                  >Sobre</a
+                >
               </li>
             </ul>
           </nav>
@@ -302,7 +392,7 @@
             <h3 class="footer__section-title">FERRAMENTAS</h3>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="home.html#">Gerador SVG</a>
+                <a class="footer__link" href="home.html">Gerador SVG</a>
               </li>
               <li class="footer__item">
                 <a class="footer__link" href="feed.html">Painel Social</a>

@@ -13,8 +13,10 @@
   --color-text: #222222;
 
   /* Aqui jaz minhas cores (lá do figma viu!!!! Nenhuma colocada por fora). */
-  --laranja-avermelhado-primario: #e45a35;
+  --vermelho-primario: #db1e1e;
+  --vermelho-secundario: #b3482a;
 
+  --laranja-avermelhado-primario: #e45a35;
   --laranja-primario: #f76205;
 
   --amarelo-primario: #f6e676;
@@ -29,14 +31,14 @@
   --bege-claro-secundario: #fce7b8;
 
   --cinza-primario: #d9d9d9;
+  --cinza-secundario: #8e8e8e;
   --branco-primario--opacity-50: #ffffff80;
 
-  --cinza-secundario: #8e8e8e;
   --branco-primario: #ffffff;
 
   --preto-primario: #000000;
-  --preto-primario--opacity-25: #00000040;
   --preto-primario--opacity-50: #00000080;
+  --preto-primario--opacity-25: #00000040;
 }
 
 /* 

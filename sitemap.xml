@@ -3,7 +3,7 @@
   
   <!-- Página Inicial -->
   <url>
-    <loc>https://paradolia.vercel.app</loc>
+    <loc>https://paradolia.vercel.app/</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
@@ -21,13 +21,13 @@
   <url>
     <loc>https://paradolia.vercel.app/feed.html</loc>
     <lastmod>2026-10-03</lastmod>
-    <changefreq>always</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Página sobre -->
+  <!-- Página Sobre -->
   <url>
-    <loc>https://paradolia.vercel.app/sobre.html</loc>
+    <loc>https://paradolia.vercel.app/sobre-retorno-home.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

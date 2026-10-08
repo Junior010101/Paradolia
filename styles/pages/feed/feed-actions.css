@@ -1,0 +1,52 @@
+/* Block */
+.feed-actions {
+  background-color: var(--branco-primario);
+  border: 1px solid var(--cinza-primario);
+  border-radius: 12px;
+  box-shadow: 0 4px 0 var(--cinza-primario);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 12px;
+}
+
+/* Element */
+.feed-actions__button {
+  width: 100%;
+  gap: 10px;
+  padding: 14px 20px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.feed-actions__button-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Modifiers */
+.feed-actions__button--primary {
+  --button-background-color: var(--laranja-avermelhado-primario);
+  --button-shadow-color: #b3482a;
+  --button-text-color: var(--branco-primario);
+  --button-border-color: transparent;
+}
+
+.feed-actions__button--secondary {
+  --button-background-color: var(--cinza-primario);
+  --button-shadow-color: var(--cinza-secundario);
+  --button-text-color: var(--branco-primario);
+  --button-border-color: transparent;
+}
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .feed-actions {
+    height: auto;
+    margin-bottom: 8px;
+  }
+}

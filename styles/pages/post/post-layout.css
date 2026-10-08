@@ -1,0 +1,42 @@
+/* Block */
+.post-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  gap: 32px;
+}
+
+/* Element */
+.post-layout__back {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-layout__comments {
+  top: 24px;
+  position: static;
+}
+
+/* Modifiers */
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .post-layout {
+    grid-template-columns: 1fr;
+  }
+  .post-layout__comments {
+    width: 90%;
+  }
+  .post-layout__content {
+    width: 90%;
+  }
+  .post-layout__back {
+    width: 90%;
+  }
+}
+
+/* Id */
+[id] {
+  scroll-margin-top: 30vh;
+}
