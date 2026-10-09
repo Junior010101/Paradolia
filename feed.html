@@ -100,6 +100,7 @@
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link rel="stylesheet" href="./styles/components/new-post-popup.css" />
+    <link rel="stylesheet" href="./styles/components/my-posts-popup.css" />
 
     <link rel="stylesheet" href="./styles/pages/feed/feed-layout.css" />
     <link rel="stylesheet" href="./styles/pages/feed/feed-posts.css" />
@@ -295,7 +296,10 @@
                 </button>
                 <button
                   type="button"
+                  popovertarget="my-posts-popup"
                   class="button feed-actions__button feed-actions__button--secondary"
+                  aria-haspopup="dialog"
+                  aria-controls="my-posts-popup"
                 >
                   <img
                     src="./assets/icons/statistycs.svg"
@@ -452,6 +456,146 @@
             Publicar
           </button>
         </form>
+      </div>
+    </div>
+
+    <div
+      id="my-posts-popup"
+      popover
+      class="my-posts-popup"
+      role="dialog"
+      aria-labelledby="my-posts-popup-title"
+    >
+      <button
+        type="button"
+        popovertarget="my-posts-popup"
+        popovertargetaction="hide"
+        class="button my-posts-popup__close"
+        aria-label="Fechar popup de seus posts"
+      >
+        <img
+          src="./assets/icons/close-icon.svg"
+          alt=""
+          class="my-posts-popup__close-icon"
+          aria-hidden="true"
+          width="44"
+          height="53"
+        />
+      </button>
+      <div class="my-posts-popup__content">
+        <h2 id="my-posts-popup-title" class="my-posts-popup__title">
+          Seus Posts
+        </h2>
+        <ul class="my-posts-popup__list">
+          <li class="my-posts-popup__item">
+            <img
+              src="./assets/images/card-do-feed-1.png"
+              alt="Ilustração de anime com personagem de cabelos azuis etéreos contra fundo bege"
+              class="my-posts-popup__cover"
+              width="640"
+              height="400"
+              loading="lazy"
+            />
+            <div class="my-posts-popup__overlay" aria-hidden="true"></div>
+            <div class="my-posts-popup__info">
+              <h3 class="my-posts-popup__post-title">
+                Quando a Arte Ultrapassa os Limites da Tela.
+              </h3>
+              <p class="my-posts-popup__post-description">
+                Já parou para reparar nos mínimos detalhes daquela cena de anime
+                que te deixou sem palavras? Mais do que simples desenhos...
+              </p>
+            </div>
+            <div class="my-posts-popup__actions">
+              <button
+                type="button"
+                class="button my-posts-popup__action my-posts-popup__action--delete"
+                aria-label="Excluir o post: Quando a Arte Ultrapassa os Limites da Tela."
+              >
+                Excluir
+              </button>
+              <button
+                type="button"
+                class="button my-posts-popup__action my-posts-popup__action--edit"
+                aria-label="Editar o post: Quando a Arte Ultrapassa os Limites da Tela."
+              >
+                Editar
+              </button>
+            </div>
+          </li>
+          <li class="my-posts-popup__item">
+            <img
+              src="./assets/images/card-do-feed-2.png"
+              alt="Paisagem noturna com casa isolada, lua cheia alaranjada e árvores sem folhas"
+              class="my-posts-popup__cover"
+              width="640"
+              height="400"
+              loading="lazy"
+            />
+            <div class="my-posts-popup__overlay" aria-hidden="true"></div>
+            <div class="my-posts-popup__info">
+              <h3 class="my-posts-popup__post-title">
+                A Solidão que Inspira o Traço Perfeito.
+              </h3>
+              <p class="my-posts-popup__post-description">
+                Às vezes o silêncio é o melhor companheiro de criação. Uma paleta
+                fria, uma lua imensa e a liberdade de criar sem julgamentos...
+              </p>
+            </div>
+            <div class="my-posts-popup__actions">
+              <button
+                type="button"
+                class="button my-posts-popup__action my-posts-popup__action--delete"
+                aria-label="Excluir o post: A Solidão que Inspira o Traço Perfeito."
+              >
+                Excluir
+              </button>
+              <button
+                type="button"
+                class="button my-posts-popup__action my-posts-popup__action--edit"
+                aria-label="Editar o post: A Solidão que Inspira o Traço Perfeito."
+              >
+                Editar
+              </button>
+            </div>
+          </li>
+          <li class="my-posts-popup__item">
+            <img
+              src="./assets/images/card-do-feed-3.png"
+              alt="Composição abstrata com manchas de tinta coloridas sobre fundo escuro"
+              class="my-posts-popup__cover"
+              width="640"
+              height="400"
+              loading="lazy"
+            />
+            <div class="my-posts-popup__overlay" aria-hidden="true"></div>
+            <div class="my-posts-popup__info">
+              <h3 class="my-posts-popup__post-title">
+                Entropia e Cor: Deixe o Acidente Guiar a Obra.
+              </h3>
+              <p class="my-posts-popup__post-description">
+                Nem toda obra nasce de um plano. Algumas das criações mais
+                marcantes surgem do caos, do erro transformado em intenção...
+              </p>
+            </div>
+            <div class="my-posts-popup__actions">
+              <button
+                type="button"
+                class="button my-posts-popup__action my-posts-popup__action--delete"
+                aria-label="Excluir o post: Entropia e Cor: Deixe o Acidente Guiar a Obra."
+              >
+                Excluir
+              </button>
+              <button
+                type="button"
+                class="button my-posts-popup__action my-posts-popup__action--edit"
+                aria-label="Editar o post: Entropia e Cor: Deixe o Acidente Guiar a Obra."
+              >
+                Editar
+              </button>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
