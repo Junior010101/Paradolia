@@ -105,6 +105,7 @@
     <link rel="stylesheet" href="./styles/components/layout.css" />
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/components/perfil-popup.css" />
 
     <link rel="stylesheet" href="./styles/pages/post/post-layout.css" />
     <link rel="stylesheet" href="./styles/pages/post/post-content.css" />
@@ -127,15 +128,24 @@
         </button>
         <span class="header__brand-title">Paradôlia</span>
       </div>
-      <img
-        src="./assets/images/fitgirl-perfil.png"
-        alt="Foto de perfil do usuário"
-        class="header__user-avatar"
-        width="180"
-        height="60"
-        loading="eager"
-        fetchpriority="high"
-      />
+      <button
+        type="button"
+        popovertarget="perfil-popup"
+        class="header__user-button"
+        aria-label="Abrir perfil do usuário"
+        aria-haspopup="dialog"
+        aria-controls="perfil-popup"
+      >
+        <img
+          src="./assets/images/fitgirl-perfil.png"
+          alt="Foto de perfil do usuário"
+          class="header__user-avatar"
+          width="180"
+          height="60"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </button>
     </header>
     <aside id="sidebar-menu" popover class="sidebar">
       <div class="sidebar__header">
@@ -440,5 +450,87 @@
         </p>
       </div>
     </footer>
+
+    <div
+      id="perfil-popup"
+      popover
+      class="perfil-popup"
+      role="dialog"
+      aria-labelledby="perfil-popup-title"
+    >
+      <button
+        type="button"
+        popovertarget="perfil-popup"
+        popovertargetaction="hide"
+        class="button perfil-popup__close"
+        aria-label="Fechar popup de perfil"
+      >
+        <img
+          src="./assets/icons/close-icon.svg"
+          alt=""
+          class="perfil-popup__close-icon"
+          aria-hidden="true"
+          width="44"
+          height="53"
+        />
+      </button>
+      <div class="perfil-popup__content">
+        <h2 id="perfil-popup-title" class="visually-hidden">
+          Perfil do usuário
+        </h2>
+        <label class="perfil-popup__upload">
+          <input
+            class="perfil-popup__upload-input visually-hidden"
+            type="file"
+            name="profile-image"
+            accept="image/*"
+          />
+          <img
+            src="./assets/images/fitgirl-perfil.png"
+            alt="Foto de perfil atual do usuário"
+            class="perfil-popup__image"
+            width="807"
+            height="229"
+          />
+          <span class="perfil-popup__upload-text"
+            >Clique aqui mudar a imagem</span
+          >
+        </label>
+        <div class="perfil-popup__profile">
+          <h3 class="perfil-popup__username">FitGirl67_Brasiliana_nata</h3>
+          <button
+            type="button"
+            class="button perfil-popup__edit"
+            aria-label="Editar nome de usuário"
+          >
+            Editar
+          </button>
+        </div>
+        <section
+          class="perfil-popup__about"
+          aria-labelledby="perfil-popup-about-title"
+        >
+          <div class="perfil-popup__about-head">
+            <h3
+              id="perfil-popup-about-title"
+              class="perfil-popup__about-title"
+            >
+              Sobre
+            </h3>
+            <button
+              type="button"
+              class="button perfil-popup__edit"
+              aria-label="Editar a seção Sobre"
+            >
+              Editar
+            </button>
+          </div>
+          <p class="perfil-popup__bio">
+            Tunts... Turururu... TUNTS... Turururu... PAN!
+          </p>
+        </section>
+        <a href="#" class="perfil-popup__community">Perfil da comunidade</a>
+      </div>
+    </div>
   </body>
 </html>

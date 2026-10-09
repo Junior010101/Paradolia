@@ -89,6 +89,20 @@
   display: block;
 }
 
+.header__user-button {
+  display: flex;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+}
+
+.header__user-button:focus-visible {
+  outline: 3px solid var(--laranja-primario);
+  outline-offset: 2px;
+}
+
 /* Modifiers */
 .header--start {
   justify-content: center;
