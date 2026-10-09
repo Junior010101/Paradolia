@@ -102,7 +102,7 @@
     <link rel="stylesheet" href="./styles/components/layout.css" />
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
-    <link rel="stylesheet" href="./styles/components/login-popup.css" />
+    <link rel="stylesheet" href="./styles/components/auth-popup.css" />
 
     <link rel="stylesheet" href="./styles/pages/home/home-layout.css" />
     <link rel="stylesheet" href="./styles/pages/home/generator.css" />
@@ -361,7 +361,7 @@
     <div
       id="login-popup"
       popover
-      class="login-popup"
+      class="auth-popup"
       role="dialog"
       aria-labelledby="login-popup-title"
     >
@@ -369,73 +369,171 @@
         type="button"
         popovertarget="login-popup"
         popovertargetaction="hide"
-        class="button login-popup__close"
+        class="button auth-popup__close"
         aria-label="Fechar popup de login"
       >
         <img
           src="./assets/icons/close-icon.svg"
           alt=""
-          class="login-popup__close-icon"
+          class="auth-popup__close-icon"
           aria-hidden="true"
           width="30"
           height="36"
         />
       </button>
-      <div class="login-popup__content">
-        <div class="login-popup__header">
-          <h2 id="login-popup-title" class="login-popup__title">
+      <div class="auth-popup__content">
+        <div class="auth-popup__header">
+          <h2 id="login-popup-title" class="auth-popup__title">
             Ei, sabia que...
           </h2>
-          <p class="login-popup__subtitle">
+          <p class="auth-popup__subtitle">
             Só pode postar e comentar quem fez login, viu!
           </p>
         </div>
-        <div class="login-popup__body">
-          <form class="login-popup__form">
-            <div class="login-popup__field">
-              <label class="login-popup__label" for="login-popup-email"
+        <div class="auth-popup__body">
+          <form class="auth-popup__form">
+            <div class="auth-popup__field">
+              <label class="auth-popup__label" for="login-popup-email"
                 >Manda o e-mail:</label
               >
               <input
                 id="login-popup-email"
-                class="login-popup__input"
+                class="auth-popup__input"
                 type="email"
                 name="email"
                 autocomplete="email"
                 required
               />
             </div>
-            <div class="login-popup__field">
-              <label class="login-popup__label" for="login-popup-password"
+            <div class="auth-popup__field">
+              <label class="auth-popup__label" for="login-popup-password"
                 >Diz tua senha:</label
               >
               <input
                 id="login-popup-password"
-                class="login-popup__input"
+                class="auth-popup__input"
                 type="password"
                 name="password"
                 autocomplete="current-password"
                 required
               />
             </div>
-            <button type="submit" class="button login-popup__submit">
+            <button type="submit" class="button auth-popup__submit">
               Entrar
             </button>
           </form>
           <section
-            class="login-popup__signup"
+            class="auth-popup__signup"
             aria-labelledby="login-popup-signup-title"
           >
-            <h3 id="login-popup-signup-title" class="login-popup__signup-title">
+            <h3 id="login-popup-signup-title" class="auth-popup__signup-title">
               Não tem conta ainda?
             </h3>
-            <p class="login-popup__signup-description">
+            <p class="auth-popup__signup-description">
               Faça seu cadastro clicando aqui:
             </p>
-            <a href="#" class="button login-popup__signup-button"
-              >Fazer cadastro</a
+            <button
+              type="button"
+              popovertarget="signup-popup"
+              class="button auth-popup__signup-button"
+              aria-haspopup="dialog"
+              aria-controls="signup-popup"
             >
+              Fazer cadastro
+            </button>
           </section>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="signup-popup"
+      popover
+      class="auth-popup auth-popup--signup"
+      role="dialog"
+      aria-labelledby="signup-popup-title"
+    >
+      <button
+        type="button"
+        popovertarget="signup-popup"
+        popovertargetaction="hide"
+        class="button auth-popup__close"
+        aria-label="Fechar popup de cadastro"
+      >
+        <img
+          src="./assets/icons/close-icon.svg"
+          alt=""
+          class="auth-popup__close-icon"
+          aria-hidden="true"
+          width="30"
+          height="36"
+        />
+      </button>
+      <div class="auth-popup__content">
+        <div class="auth-popup__header">
+          <h2 id="signup-popup-title" class="auth-popup__title">Cadastre-se</h2>
+          <p class="auth-popup__subtitle">
+            Bora lá, preencha o formulário abaixo:
+          </p>
+        </div>
+        <div class="auth-popup__body">
+          <form class="auth-popup__form">
+            <div class="auth-popup__field">
+              <label class="auth-popup__label" for="signup-popup-username"
+                >Crie um nome legal para seu usuário:</label
+              >
+              <input
+                id="signup-popup-username"
+                class="auth-popup__input"
+                type="text"
+                name="username"
+                autocomplete="username"
+                required
+              />
+            </div>
+            <div class="auth-popup__field">
+              <label class="auth-popup__label" for="signup-popup-email"
+                >Manda o e-mail:</label
+              >
+              <input
+                id="signup-popup-email"
+                class="auth-popup__input"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="auth-popup__field">
+              <label class="auth-popup__label" for="signup-popup-password"
+                >Cria tua senha:</label
+              >
+              <input
+                id="signup-popup-password"
+                class="auth-popup__input"
+                type="password"
+                name="password"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+            <div class="auth-popup__field">
+              <label class="auth-popup__label" for="signup-popup-confirm"
+                >Confirma tua senha:</label
+              >
+              <input
+                id="signup-popup-confirm"
+                class="auth-popup__input"
+                type="password"
+                name="confirm-password"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+            <button type="submit" class="button auth-popup__submit">
+              Entrar
+            </button>
+          </form>
         </div>
       </div>
     </div>
