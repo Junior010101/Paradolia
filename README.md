@@ -15,11 +15,58 @@
 <picture>![Status](https://img.shields.io/badge/HTML-5-red?logo=html5)</picture>
 <picture>![Status](https://img.shields.io/badge/CSS-8A2BE2?logo=css)</picture>
 
+## 📌 Sobre o Projeto
+
+O **Paradôlia** é uma aplicação web estática voltada ao estímulo da criatividade e combate ao burnout criativo por meio de entropia visual e formas abstratas.
+
+## ✨ Funcionalidades
+
+- 🎨 **Gerador de SVG:** Ferramenta interativa na página inicial para geração de SVGs.
+- 💬 **Mensagens Motivacionais:** Dispensador de frases de incentivo à criatividade.
+- 📱 **Interface Responsiva:** Design otimizado para celulares, tablets e desktops.
+- 📰 **Feed e Fórum:** Espaço de postagens e navegação interativa.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5:** Estruturação semântica.
+- **CSS3:** Estilização responsiva e layouts.
+
+## 🚀 Como Executar o Projeto
+
+### 1° Clone o repositório
+
+```bash
+git clone https://github.com/Junior010101/Paradolia.git
+```
+
+### 2° Abra a pasta
+
+```bash
+cd Paradolia
+```
+
+### 3° Abra o arquivo index.html em seu navegador
+
+```text
+,----------------------------------.
+|  file://.../index.html           |
+|----------------------------------|
+|  <html>                          |
+|    <body>                        |
+|      <h1>Paradôlia</h1>          |
+|    </body>                       |
+|  </html>                         |
+`----------------------------------'
+                ||
+         .------''------.
+        /                \
+```
+
+---
+
 ## Licença do Projeto
 
 Este projeto está licenciado sob a Licença **GNU General Public License v3.0 (GPLv3)**. Veja o arquivo [LICENSE](LICENSE.txt) para mais detalhes.
-
----
 
 ## Licenças de Terceiros (Third-Party Notices)
 
@@ -58,3 +105,6 @@ Disponibilizadas sob a [Licença de Conteúdo do Pixabay](https://pixabay.com/se
 
 "Collapse of Meanings" por Pepe Mescuzi (<https://lospec.com/gallery/pepe-mescuzi/collapse-of-meanings>).
 Disponibilizado na galeria Lospec. Todos os direitos reservados ao seu criador original.
+
+---
+**Desenvolvido por [Junior010101](https://github.com/Junior010101)**
