@@ -99,6 +99,7 @@
     <link rel="stylesheet" href="./styles/components/layout.css" />
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
     <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/components/new-post-popup.css" />
 
     <link rel="stylesheet" href="./styles/pages/feed/feed-layout.css" />
     <link rel="stylesheet" href="./styles/pages/feed/feed-posts.css" />
@@ -277,7 +278,10 @@
               <div class="feed-actions">
                 <button
                   type="button"
+                  popovertarget="new-post-popup"
                   class="button feed-actions__button feed-actions__button--primary"
+                  aria-haspopup="dialog"
+                  aria-controls="new-post-popup"
                 >
                   <img
                     src="./assets/icons/add-icon.svg"
@@ -373,5 +377,82 @@
         </p>
       </div>
     </footer>
+
+    <div
+      id="new-post-popup"
+      popover
+      class="new-post-popup"
+      role="dialog"
+      aria-labelledby="new-post-popup-title"
+    >
+      <button
+        type="button"
+        popovertarget="new-post-popup"
+        popovertargetaction="hide"
+        class="button new-post-popup__close"
+        aria-label="Fechar popup de novo post"
+      >
+        <img
+          src="./assets/icons/close-icon.svg"
+          alt=""
+          class="new-post-popup__close-icon"
+          aria-hidden="true"
+          width="44"
+          height="53"
+        />
+      </button>
+      <div class="new-post-popup__content">
+        <h2 id="new-post-popup-title" class="new-post-popup__title">
+          Novo post
+        </h2>
+        <form class="new-post-popup__form">
+          <label class="new-post-popup__upload">
+            <input
+              class="new-post-popup__upload-input visually-hidden"
+              type="file"
+              name="image"
+              accept="image/*"
+            />
+            <img
+              src="./assets/icons/photo-icon.svg"
+              alt=""
+              class="new-post-popup__upload-icon"
+              aria-hidden="true"
+              width="48"
+              height="76"
+            />
+            <span class="new-post-popup__upload-text"
+              >Clique aqui adicionar uma imagem</span
+            >
+          </label>
+          <div class="new-post-popup__field">
+            <label class="new-post-popup__label" for="new-post-popup-post-title"
+              >Crie um título legal para seu post:</label
+            >
+            <input
+              id="new-post-popup-post-title"
+              class="new-post-popup__input"
+              type="text"
+              name="post-title"
+            />
+          </div>
+          <div class="new-post-popup__field">
+            <label
+              class="new-post-popup__label"
+              for="new-post-popup-description"
+              >Adicione uma descrição:</label
+            >
+            <textarea
+              id="new-post-popup-description"
+              class="new-post-popup__textarea"
+              name="post-description"
+            ></textarea>
+          </div>
+          <button type="submit" class="button new-post-popup__submit">
+            Publicar
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
