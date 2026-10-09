@@ -40,9 +40,6 @@
 }
 
 /* Post Card Block */
-.post-card__link {
-  text-decoration: none;
-}
 .post-card {
   border-radius: 12px;
   overflow: hidden;

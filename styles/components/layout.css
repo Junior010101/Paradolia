@@ -34,6 +34,10 @@
   gap: 32px;
 }
 
+.post-card__link {
+  text-decoration: none;
+}
+
 /* Modifiers */
 
 /* Media Queries */
