@@ -45,9 +45,12 @@ Disponibilizado na galeria Lospec. Todos os direitos reservados ao seu criador o
 
 ### Ilustrações das Seções Feed, Fórum e Post Body
 
-* **Garota Anime/Manga:** Criada por [andsproject](https://pixabay.com/users/andsproject-28216173/) via [Pixabay](https://pixabay.com/pt/vectors/garota-anime-manga-nuvem-azul-10137698/).
-* **Homem Incêndio / Chama:** Criada por [andsproject](https://pixabay.com/users/andsproject-28216173/) via [Pixabay](https://pixabay.com/pt/vectors/homem-inc%C3%AAndio-chama-queimando-7412527/).
-* **Winter Cottage Full Moon Night:** Criada por [PixelLabs](https://pixabay.com/users/pixellabs-44988775/) via [Pixabay](https://pixabay.com/illustrations/winter-cottage-full-moon-night-10417187/).
+- **Garota Anime/Manga:** Criada por [andsproject](https://pixabay.com/users/andsproject-28216173/) via [Pixabay](https://pixabay.com/pt/vectors/garota-anime-manga-nuvem-azul-10137698/).
+- **Homem Incêndio / Chama:** Criada por [andsproject](https://pixabay.com/users/andsproject-28216173/) via [Pixabay](https://pixabay.com/pt/vectors/homem-inc%C3%AAndio-chama-queimando-7412527/).
+- **Winter Cottage Full Moon Night:** Criada por [PixelLabs](https://pixabay.com/users/pixellabs-44988775/) via [Pixabay](https://pixabay.com/illustrations/winter-cottage-full-moon-night-10417187/).
+- **Gato Gatinho:** Disponibilizada via [Pixabay](https://pixabay.com/pt/photos/gato-gatinho-bicho-de-estima%C3%A7%C3%A3o-1192026/).
+- **Woman Portrait Beauty Face Gothic:** Disponibilizada via [Pixabay](https://pixabay.com/illustrations/woman-portrait-beauty-face-gothic-8754523/).
+- **Gameboy Videospiel:** Disponibilizada via [Pixabay](https://pixabay.com/de/photos/gameboy-videospiel-spielen-kind-1143675/).
 
 Disponibilizadas sob a [Licença de Conteúdo do Pixabay](https://pixabay.com/service/license-summary/).
 

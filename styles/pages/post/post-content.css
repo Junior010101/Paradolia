@@ -95,6 +95,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .post-content__slides {
@@ -164,19 +165,3 @@
 }
 
 /* Modifiers */
-
-/* Media Queries */
-@media (max-width: 820px) {
-  .post-content__author-avatar {
-    width: 54px;
-    height: 54px;
-  }
-
-  .post-content__title {
-    font-size: var(--fs-h3);
-  }
-
-  .post-content__slide-image {
-    height: 300px;
-  }
-}

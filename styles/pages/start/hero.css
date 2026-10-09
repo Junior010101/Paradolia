@@ -28,11 +28,11 @@
 }
 
 .hero__vector {
+  display: block;
   position: absolute;
-  bottom: -1vh;
+  bottom: -1px;
   left: 0;
   width: 100%;
-  height: auto;
   z-index: 9;
   pointer-events: none;
   fill: var(--branco-primario);
