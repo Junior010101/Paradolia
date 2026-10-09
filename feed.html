@@ -101,6 +101,7 @@
     <link rel="stylesheet" href="./styles/components/footer.css" />
     <link rel="stylesheet" href="./styles/components/new-post-popup.css" />
     <link rel="stylesheet" href="./styles/components/my-posts-popup.css" />
+    <link rel="stylesheet" href="./styles/components/modify-post-popup.css" />
 
     <link rel="stylesheet" href="./styles/pages/feed/feed-layout.css" />
     <link rel="stylesheet" href="./styles/pages/feed/feed-posts.css" />
@@ -516,7 +517,10 @@
               </button>
               <button
                 type="button"
+                popovertarget="modify-post-popup"
                 class="button my-posts-popup__action my-posts-popup__action--edit"
+                aria-haspopup="dialog"
+                aria-controls="modify-post-popup"
                 aria-label="Editar o post: Quando a Arte Ultrapassa os Limites da Tela."
               >
                 Editar
@@ -552,7 +556,10 @@
               </button>
               <button
                 type="button"
+                popovertarget="modify-post-popup"
                 class="button my-posts-popup__action my-posts-popup__action--edit"
+                aria-haspopup="dialog"
+                aria-controls="modify-post-popup"
                 aria-label="Editar o post: A Solidão que Inspira o Traço Perfeito."
               >
                 Editar
@@ -588,7 +595,10 @@
               </button>
               <button
                 type="button"
+                popovertarget="modify-post-popup"
                 class="button my-posts-popup__action my-posts-popup__action--edit"
+                aria-haspopup="dialog"
+                aria-controls="modify-post-popup"
                 aria-label="Editar o post: Entropia e Cor: Deixe o Acidente Guiar a Obra."
               >
                 Editar
@@ -596,6 +606,116 @@
             </div>
           </li>
         </ul>
+      </div>
+    </div>
+
+    <div
+      id="modify-post-popup"
+      popover
+      class="modify-post-popup"
+      role="dialog"
+      aria-labelledby="modify-post-popup-title"
+    >
+      <button
+        type="button"
+        popovertarget="modify-post-popup"
+        popovertargetaction="hide"
+        class="button modify-post-popup__close"
+        aria-label="Fechar popup de modificar post"
+      >
+        <img
+          src="./assets/icons/close-icon.svg"
+          alt=""
+          class="modify-post-popup__close-icon"
+          aria-hidden="true"
+          width="44"
+          height="53"
+        />
+      </button>
+      <div class="modify-post-popup__content">
+        <h2 id="modify-post-popup-title" class="modify-post-popup__title">
+          Modificar post
+        </h2>
+        <form class="modify-post-popup__form">
+          <label class="modify-post-popup__upload">
+            <input
+              class="modify-post-popup__upload-input visually-hidden"
+              type="file"
+              name="image"
+              accept="image/*"
+            />
+            <img
+              src="./assets/icons/photo-icon.svg"
+              alt=""
+              class="modify-post-popup__upload-icon"
+              aria-hidden="true"
+              width="48"
+              height="76"
+            />
+            <span class="modify-post-popup__upload-text"
+              >Clique aqui adicionar uma imagem</span
+            >
+          </label>
+          <div
+            class="modify-post-popup__gallery"
+            role="group"
+            aria-label="Imagens atuais do post"
+          >
+            <img
+              src="./assets/images/card-do-feed-1.png"
+              alt="Imagem atual do post: ilustração de anime com personagem de cabelos azuis etéreos"
+              class="modify-post-popup__thumb"
+              width="125"
+              height="80"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/card-do-feed-2.png"
+              alt="Imagem atual do post: paisagem noturna com casa isolada e lua cheia"
+              class="modify-post-popup__thumb"
+              width="125"
+              height="80"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/card-do-feed-3.png"
+              alt="Imagem atual do post: composição abstrata com manchas de tinta sobre fundo escuro"
+              class="modify-post-popup__thumb"
+              width="125"
+              height="80"
+              loading="lazy"
+            />
+          </div>
+          <div class="modify-post-popup__field">
+            <label
+              class="modify-post-popup__label"
+              for="modify-post-popup-post-title"
+              >Apague o antigo e coloque um título ainda melhor:</label
+            >
+            <input
+              id="modify-post-popup-post-title"
+              class="modify-post-popup__input"
+              type="text"
+              name="post-title"
+              value="O que você vai descobrir hoje."
+            />
+          </div>
+          <div class="modify-post-popup__field">
+            <label
+              class="modify-post-popup__label"
+              for="modify-post-popup-description"
+              >Mude a descrição também se quiser:</label
+            >
+            <textarea
+              id="modify-post-popup-description"
+              class="modify-post-popup__textarea"
+              name="post-description"
+            >A verdadeira arte não é apenas aquela que admiramos de longe, mas a que consegue mexer com a gente por dentro, transformando nossa maneira de sentir e ver o mundo.</textarea>
+          </div>
+          <button type="submit" class="button modify-post-popup__submit">
+            Republicar
+          </button>
+        </form>
       </div>
     </div>
   </body>
