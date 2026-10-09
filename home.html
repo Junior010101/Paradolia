@@ -530,6 +530,68 @@
                 required
               />
             </div>
+            <button
+              type="button"
+              popovertarget="email-auth-popup"
+              class="button auth-popup__submit"
+              aria-haspopup="dialog"
+              aria-controls="email-auth-popup"
+            >
+              Cadastrar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="email-auth-popup"
+      popover
+      class="auth-popup auth-popup--email-auth"
+      role="dialog"
+      aria-labelledby="email-auth-popup-title"
+    >
+      <button
+        type="button"
+        popovertarget="email-auth-popup"
+        popovertargetaction="hide"
+        class="button auth-popup__close"
+        aria-label="Fechar popup de autenticação"
+      >
+        <img
+          src="./assets/icons/close-icon.svg"
+          alt=""
+          class="auth-popup__close-icon"
+          aria-hidden="true"
+          width="30"
+          height="36"
+        />
+      </button>
+      <div class="auth-popup__content">
+        <div class="auth-popup__header">
+          <h2 id="email-auth-popup-title" class="auth-popup__title">
+            Let's Go!
+          </h2>
+          <p class="auth-popup__subtitle">
+            Chegou um código em seu email, tem como colocar aqui?
+          </p>
+        </div>
+        <div class="auth-popup__body">
+          <form class="auth-popup__form">
+            <div class="auth-popup__field">
+              <label class="auth-popup__label" for="email-auth-popup-code"
+                >Inserir código de autenticação:</label
+              >
+              <input
+                id="email-auth-popup-code"
+                class="auth-popup__input"
+                type="text"
+                name="code"
+                autocomplete="one-time-code"
+                inputmode="numeric"
+                required
+              />
+            </div>
             <button type="submit" class="button auth-popup__submit">
               Entrar
             </button>
