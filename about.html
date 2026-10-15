@@ -34,10 +34,7 @@
       content="Saiba mais sobre o Paradôlia: nosso propósito e valores. Entre em contato e acesse o suporte oficial do projeto."
     />
     <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://paradolia.vercel.app/sobre-retorno-home.html"
-    />
+    <link rel="canonical" href="https://paradolia.vercel.app/about.html" />
     <meta name="theme-color" content="#fbc782" />
 
     <!-- Open Graph meta tags -->
@@ -49,10 +46,7 @@
     com um banner do seu site, sendo ele o og-card.png (og:image).
      -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://paradolia.vercel.app/sobre-retorno-home.html"
-    />
+    <meta property="og:url" content="https://paradolia.vercel.app/about.html" />
     <meta property="og:site_name" content="Paradôlia" />
     <meta property="og:title" content="Sobre – Paradôlia" />
     <meta
@@ -111,7 +105,14 @@
   </head>
   <body>
     <header class="header header--start">
-      <a href="home.html" title="Voltar à página principal">
+      <a
+        href="#"
+        onclick="
+          history.back();
+          return false;
+        "
+        title="Voltar à página principal"
+      >
         <img
           src="./assets/images/logotipo.svg"
           alt="Logotipo do Paradôlia"
@@ -299,9 +300,7 @@
             <h3 class="footer__section-title">NAVEGAÇÃO</h3>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="sobre-retorno-home.html#"
-                  >Sobre</a
-                >
+                <a class="footer__link" href="#">Sobre</a>
               </li>
             </ul>
           </nav>
