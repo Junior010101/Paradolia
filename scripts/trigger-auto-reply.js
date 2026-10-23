@@ -1,3 +1,3 @@
 const spawnPatternAndMessage = () => {
-  console.log("Hello World!");
+  send_message_request(1);
 };

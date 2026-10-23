@@ -62,6 +62,7 @@ Ao receber código HTML/CSS para auditoria:
 ## 3. Formato do Retorno da Auditoria
 
 Ao emitir o relatório de auditoria para o usuário:
+
 1. Destaque os problemas encontrados categorizados por gravidade (Crítico, Médio, Baixo).
 2. Forneça o snippet de código com as **linhas exatas a serem corrigidas**, sem reescrever arquivos inteiros desnecessariamente.
 3. Justifique a mudança com base nos critérios WCAG correspondentes.
@@ -71,6 +72,7 @@ Ao emitir o relatório de auditoria para o usuário:
 ## 4. Recursos e Exemplos
 
 Consulte os arquivos de apoio inclusos nesta skill:
+
 - [Exemplo de Código Inadequado (Bad)](./examples/bad.html)
 - [Exemplo de Código Corrigido e Acessível (Good)](./examples/good.html)
 - [Checklist Detalhado WCAG 2.1 AA](./resources/wcag-checklist.md)
