@@ -225,74 +225,7 @@
                     </option>
                   </select>
                 </header>
-                <div class="motivational-feed__list">
-                  <article class="motivational-feed__card">
-                    <header class="motivational-feed__card-header">
-                      <img
-                        src="./assets/images/paradolia-perfil.png"
-                        alt=""
-                        class="motivational-feed__card-avatar"
-                        aria-hidden="true"
-                        width="36"
-                        height="36"
-                      />
-                      <div class="motivational-feed__card-author-info">
-                        <span class="motivational-feed__card-author"
-                          >Paradôlia</span
-                        >
-                        <span class="motivational-feed__card-category"
-                          >Inspiração</span
-                        >
-                      </div>
-                    </header>
-                    <h3 class="motivational-feed__card-quote">
-                      Sua arte não precisa agradar a todo mundo para ter valor;
-                      ela precisa apenas ser verdadeira.
-                    </h3>
-                    <hr
-                      class="motivational-feed__card-divider"
-                      aria-hidden="true"
-                    />
-                    <p class="motivational-feed__card-body">
-                      Acredite no seu olhar e permita que sua criação floresça
-                      sem a necessidade de aprovação.
-                    </p>
-                  </article>
-                  <article class="motivational-feed__card">
-                    <header class="motivational-feed__card-header">
-                      <img
-                        src="./assets/images/paradolia-perfil.png"
-                        alt=""
-                        class="motivational-feed__card-avatar"
-                        aria-hidden="true"
-                        width="36"
-                        height="36"
-                      />
-                      <div class="motivational-feed__card-author-info">
-                        <span class="motivational-feed__card-author"
-                          >Paradôlia</span
-                        >
-                        <span class="motivational-feed__card-category"
-                          >Inspiração</span
-                        >
-                      </div>
-                    </header>
-                    <h3 class="motivational-feed__card-quote">
-                      Projetar não é apenas sobre pixels bonitos ou formas
-                      perfeitas, mas sobre resolver a dor de alguém de forma
-                      invisível e elegante.
-                    </h3>
-                    <hr
-                      class="motivational-feed__card-divider"
-                      aria-hidden="true"
-                    />
-                    <p class="motivational-feed__card-body">
-                      O código que você escreve hoje é a ponte entre uma ideia
-                      abstrata e uma ferramenta que resolve problemas reais.
-                      Continue iterando.
-                    </p>
-                  </article>
-                </div>
+                <div id="card-list" class="motivational-feed__list"></div>
               </section>
             </div>
           </div>
@@ -605,5 +538,6 @@
     <script defer src="/scripts/trigger-auto-reply.js"></script>
     <script defer src="/client/config.js"></script>
     <script defer src="/client/fetch-auto-reply.js"></script>
+    <script defer src="/scripts/render-auto-reply.js"></script>
   </body>
 </html>
