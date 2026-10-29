@@ -2,6 +2,10 @@ let count = Number(localStorage.getItem("counter")) || 1;
 
 const spawnPatternAndMessage = async () => {
   let data = await sendMessageRequest(count);
+  let object = await getVectorByRequest();
+
+  spawnPattern(object.vector);
+  localStorage.setItem("vectorPath", object.vector);
 
   if (data.erro) {
     alert(

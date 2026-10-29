@@ -185,9 +185,9 @@
             <div class="home-layout__column">
               <section class="generator">
                 <h2 class="generator__badge">Você consegue!</h2>
-                <div class="generator__canvas">
+                <div id="svg-generator" class="generator__canvas">
                   <img
-                    src="./assets/images/svg-gerado.png"
+                    src="./assets/images/fallback.svg"
                     alt="Padrão abstrato gerado com linhas coloridas entrelaçadas"
                     class="generator__image"
                     width="700"
@@ -537,6 +537,8 @@
     </div>
     <script defer src="/scripts/trigger-auto-reply.js"></script>
     <script defer src="/client/config.js"></script>
+    <script defer src="/client/fetch-vector.js"></script>
+    <script defer src="/scripts/render-vector.js"></script>
     <script defer src="/client/fetch-auto-reply.js"></script>
     <script defer src="/scripts/render-auto-reply.js"></script>
   </body>
